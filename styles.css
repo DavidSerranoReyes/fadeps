@@ -1,19 +1,144 @@
 /* Estilos generales */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f5ede5; /* Fondo claro */
+  background: linear-gradient(
+    to right,
+    rgba(250, 238, 208, 0.8),
+    rgba(247, 240, 220, 0.8),
+    rgba(248, 234, 192, 0.8)
+  );
+
   color: #3f1177; /* Texto oscuro */
 }
 
-.custom-logo {
-  width: 60px; /* Ajusta el tamaño que desees */
-  height: 60px; /* Ajusta el tamaño que desees */
+.navbar {
+  /* Fondo negro transparente */
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease;
+  height: 80px;
 }
+
+/* Estilos para el menú desplegable en móviles */
+.navbar-collapse {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ) !important; /* Fondo negro transparente */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para los enlaces del menú desplegable */
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important; /* Color del texto */
+  padding: 10px 15px; /* Espaciado interno */
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 1) !important; /* Color del texto al hacer hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo claro al hacer hover */
+}
+
+/* Estilos para el botón del toggler (ícono de hamburguesa) */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.8); /* Color del borde */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Color del ícono */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .navbar {
+    height: auto; /* Ajusta la altura automáticamente */
+    padding: 10px; /* Añade un poco de padding */
+  }
+
+  .navbar-nav .nav-link {
+    padding: 8px 12px; /* Ajusta el padding para pantallas pequeñas */
+  }
+
+  .navbar-collapse {
+    margin-top: 10px; /* Añade un margen superior */
+  }
+}
+
+body {
+  padding-top: 80px;
+}
+
+.header-background {
+  background-color: white; /* Fondo blanco */
+  background-image:
+    url('assets/logobandera.webp'),
+    linear-gradient(to right, rgba(31, 102, 160, 0.5), rgba(200, 200, 200, 0)),
+    /* Línea 1 */
+      linear-gradient(
+        to right,
+        rgba(117, 177, 196, 0.5),
+        rgba(150, 150, 150, 0)
+      ),
+    /* Línea 2 */
+      linear-gradient(
+        to right,
+        rgba(100, 100, 100, 0.5),
+        rgba(100, 100, 100, 0)
+      ); /* Línea 3 */
+  background-size:
+    280px 190px,
+    /* Tamaño de la bandera (ajusta estos valores según necesites) */ 100% 4px,
+    /* Ancho y alto de la línea 1 */ 100% 4px,
+    /* Ancho y alto de la línea 2 */ 100% 4px; /* Ancho y alto de la línea 3 */
+
+  background-position:
+    left top,
+    /* Posición de la bandera */ 0 94%,
+    /* Posición de la línea 1 */ 0 96%,
+    /* Posición de la línea 2 */ 0 98%; /* Posición de la línea 3 */
+
+  background-repeat: no-repeat; /* Evita que se repitan las imágenes y líneas */
+}
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  .header-background {
+    background-size:
+      180px 90px,
+      /* Tamaño de la bandera en móvil (ajusta estos valores) */ 100% 4px,
+      /* Línea 1 */ 100% 4px,
+      /* Línea 2 */ 100% 4px; /* Línea 3 */
+  }
+}
+
+.social-icons {
+  justify-content: center !important;
+  gap: 35px !important;
+}
+
+.social-icons i {
+  font-size: 35px; /* Ajusta el tamaño de los iconos */
+  color: #3f1177;
+  transition: color 0.3s ease; /* Para que el color cambie con una transición suave cuando pases el cursor */
+}
+
+/* Efecto de cambio de color cuando pasas el cursor por encima */
+.social-icons i:hover {
+  color: #d69d02; /* Cambia el color al pasar el ratón */
+}
+
+/* Logo */
+.custom-logo {
+  width: 60px;
+  height: 60px;
+}
+
 /* Navbar */
 .navbar {
-  padding-top: 10px; /* Reducimos el espacio arriba */
-  padding-bottom: 10px; /* Reducimos el espacio abajo */
-  z-index: 1000; /* Asegurar que el navbar no tape otros elementos */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 1000;
 }
 
 .nav-link {
@@ -22,7 +147,93 @@ body {
 }
 
 .nav-link:hover {
-  color: #d65702 !important;
+  color: #d69d02 !important;
+  text-decoration: underline; /* Subrayado en hover */
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  text-decoration: none; /* Eliminamos el subrayado predeterminado */
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #d69d02;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* El subrayado se expandirá al 100% */
+}
+
+/* Estilos para el carrusel */
+#newsCarousel {
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  margin: 0 auto;
+  position: relative;
+}
+
+#newsCarousel .carousel-inner {
+  padding: 20px 0; /* Espaciado vertical */
+}
+
+#newsCarousel .carousel-item {
+  background-color: #fff; /* Fondo blanco para las noticias */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#newsCarousel .img-fluid {
+  height: 200px; /* Altura fija para las miniaturas */
+  object-fit: cover; /* Ajustar la imagen sin distorsionar */
+  border-radius: 10px 0 0 10px; /* Bordes redondeados solo en la izquierda */
+}
+
+#newsCarousel .btn-outline-primary {
+  border-color: #2c3e50; /* Color del borde del botón */
+  color: #2c3e50; /* Color del texto del botón */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+#newsCarousel .btn-outline-primary:hover {
+  background-color: #2c3e50; /* Fondo al hacer hover */
+  color: #fff; /* Texto blanco al hacer hover */
+}
+
+/* Estilos para los controles del carrusel (flechas) */
+#newsCarousel .carousel-control-prev,
+#newsCarousel .carousel-control-next {
+  width: 40px; /* Ancho de las flechas */
+  height: 40px; /* Alto de las flechas */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  border-radius: 50%; /* Forma circular */
+  top: 50%; /* Centrar verticalmente */
+  transform: translateY(-50%); /* Ajuste fino para centrar */
+  opacity: 0.5; /* Transparencia */
+  transition: opacity 0.3s ease; /* Transición suave */
+}
+
+#newsCarousel .carousel-control-prev {
+  left: 15px; /* Posición desde la izquierda */
+}
+
+#newsCarousel .carousel-control-next {
+  right: 15px; /* Posición desde la derecha */
+}
+
+#newsCarousel .carousel-control-prev:hover,
+#newsCarousel .carousel-control-next:hover {
+  opacity: 1; /* Sin transparencia al hacer hover */
+}
+
+/* Pausar el carrusel al hacer hover */
+#newsCarousel:hover .carousel-inner {
+  transition: none;
 }
 
 /* Botones */
@@ -40,7 +251,7 @@ body {
 /* Tarjetas */
 .card {
   border: none;
-  border-radius: 15px;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition:
     transform 0.3s ease,
@@ -76,8 +287,8 @@ header {
 
 /* Secciones */
 section {
-  padding-top: 80px; /* Espacio arriba de cada sección */
-  padding-bottom: 80px; /* Espacio abajo de cada sección */
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 /* Footer */
@@ -120,7 +331,7 @@ footer a:hover {
 }
 
 .whatsapp-button:hover {
-  background-color: #07b975; /* Color de WhatsApp al pasar el mouse */
+  background-color: #07b975;
   text-decoration: none;
   color: #fff;
 }
@@ -138,19 +349,6 @@ footer a:hover {
   }
 }
 
-/* Estilos para las tarjetas */
-.card {
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  border-radius: 15px;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
 /* Color personalizado para los íconos */
 .text-purple {
   color: #6a1b9a; /* Morado principal */
@@ -160,12 +358,20 @@ footer a:hover {
 .card-title {
   font-size: 1.75rem;
   font-weight: bold;
+  color: #211627;
 }
 
 .card-text {
   font-size: 1rem;
   line-height: 1.6;
   text-align: left;
+  color: rgb(92, 91, 91);
+}
+#nosotros .card-text {
+  font-size: 18px; /* Ajusta el tamaño del texto dentro de la sección con ID "ultimo" */
+}
+#productos .card-text {
+  font-size: 18px; /* Ajusta el tamaño del texto dentro de la sección con ID "ultimo" */
 }
 
 @media (max-width: 768px) {
@@ -174,6 +380,18 @@ footer a:hover {
   }
   header p {
     font-size: 1.2rem;
+  }
+
+  /* Navbar en dispositivos móviles */
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+
+  /* Botón de WhatsApp en dispositivos móviles */
+  .whatsapp-button {
+    bottom: 20px;
+    right: 10px;
+    font-size: 28px;
   }
 }
 
@@ -191,13 +409,14 @@ footer a:hover {
   --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
+/* Imagen circular con efecto hover */
 .image-container {
   position: relative;
   display: inline-block;
   overflow: hidden;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 185px;
+  height: 215px;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -252,6 +471,7 @@ footer a:hover {
   color: var(--main-color);
 }
 
+/* Indicador de clic en móvil */
 .click-indicator {
   display: none;
   position: absolute;
@@ -299,4 +519,8 @@ footer a:hover {
     margin-left: auto !important;
     margin-right: auto !important;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -14,6 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -36,13 +37,11 @@
   </head>
   <body>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container-fluid">
-        <!-- Logo o nombre del sitio -->
         <a class="navbar-brand me-4" href="#">
           <img src="assets/logo.png" alt="Logo Fadeps" class="custom-logo" />
         </a>
-        <!-- Botón para menú en móviles -->
         <button
           class="navbar-toggler"
           type="button"
@@ -54,98 +53,177 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Contenido de la barra de navegación -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!-- Enlaces de navegación -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#nosotros">
-                Nosotros
-              </a>
+              <a class="nav-link active" aria-current="page" href="#nosotros">Nosotros</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#equipo">Equipo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#productos">Prodctos y Servivios</a>
+              <a class="nav-link" href="#productos">Productos y Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contactanos</a>
+              <a class="nav-link" href="#contacto">Contáctanos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#ultimo">Lo Último</a>
             </li>
-          </ul>
-
-          <!-- Iconos de redes sociales -->
-          <ul class="navbar-nav">
             <li class="nav-item">
-              <a
-                href="https://facebook.com/tu-pagina"
-                class="nav-link text-white"
-                target="_blank"
-                aria-label="Facebook"
-              >
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://twitter.com/tu-pagina"
-                class="nav-link text-white"
-                target="_blank"
-                aria-label="Twitter"
-              >
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://instagram.com/tu-pagina"
-                class="nav-link text-white"
-                target="_blank"
-                aria-label="Instagram"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
+              <a class="nav-link" href="#socios">Socios Estratégicos</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Sección Inicio -->
-    <header
-      class="text-white text-center py-5"
-      style="
-        background: url('assets/fondofadeps.jpg') no-repeat center center/cover;
-        color: white;
-      "
-    >
+    <header class="text-center py-5 header-background" style="background-color: #ffffff;">
       <div class="container">
+        <!-- Logo -->
         <img src="assets/logo.png" alt="Logo Fadeps" width="280" />
-        <h1 class="display-4" data-aos="fade-down" data-aos-duration="1000">
-          Bienvenidos a Fundación Fadeps
+    
+        <!-- Título principal -->
+        <h1 class="display-4 text-dark grow-on-hover" data-aos="fade-down" data-aos-duration="1000" style="font-weight: 700;">
+          Bienvenidos a Fundación <span style="font-weight: 300; color: #2c3e50;">FADEPS</span>
         </h1>
+        <!-- Descripción -->
         <p
-          class="lead"
+          class="lead text-secondary"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="200"
         >
-          Transformando vidas, construyendo futuro.
+          Generación de capacidades productivas; fomento del desarrollo económico, productivo y social con especial énfasis en las comunidades, actores y asociaciones productivas, empresas y emprendedores.
         </p>
+    
+        <!-- Botón -->
         <a
           href="#nosotros"
-          class="btn btn-light btn-lg"
+          class="btn btn-secondary btn-lg"
           data-aos="fade-in"
           data-aos-duration="1000"
           data-aos-delay="400"
         >
           Conócenos
         </a>
+  
+        <!-- Iconos de redes sociales -->
+        
+          <div class="social-icons d-flex justify-content-center mt-4" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="600"></li>
+            <a
+              href="https://facebook.com/tu-pagina"
+              class="nav-link text-white"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+         
+            <a
+              href="https://instagram.com/tu-pagina"
+              class="nav-link text-white"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://twitter.com/tu-pagina"
+              class="nav-link text-white"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          
+        </div>
       </div>
     </header>
+ 
+
+<!-- Carrusel de Noticias -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Actualidad Mundial y Local</h2>
+    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <!-- Contenido del carrusel -->
+      <div class="carousel-inner">
+        <!-- Noticia 1 -->
+        <div class="carousel-item active">
+          <div class="row g-0 align-items-center">
+            <!-- Miniatura de la noticia -->
+            <div class="col-md-4">
+              <img src="https://img.youtube.com/vi/BL10m90XeCk/maxresdefault.jpg" alt="Noticia 1" class="img-fluid rounded-start">
+            </div>
+            <!-- Texto de la noticia -->
+            <div class="col-md-8">
+              <div class="p-4">
+                <h3 class="card-title">EL PAÍS DONDE LA MENTE HUMANA ES VALORADA PREMIADA Y CELEBRADA</h3>
+                <p class="card-text">
+                  ¿Están listos para un viaje que sacudirá sus neuronas de pura inspiración? ¡Bienvenidos a “El país donde la mente humana es valorada, premiada y celebrada” y no, no es un cuento de hadas, es Suecia, la tierra de las ideas revolucionarias, la innovación sin límites y… ¡los premios Nobel!
+                </p>
+                <a href="https://www.youtube.com/watch?v=BL10m90XeCk" class="btn btn-outline-primary btn-sm" target="_blank">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Noticia 2 -->
+        <div class="carousel-item">
+          <div class="row g-0 align-items-center">
+            <!-- Miniatura de la noticia -->
+            <div class="col-md-4">
+              <img src="https://ekoscumbresostenibilidad.com/images/2025/01/28/cumbres-sostenibilidad-2025.jpg" alt="Noticia 2" class="img-fluid rounded-start">
+            </div>
+            <!-- Texto de la noticia -->
+            <div class="col-md-8">
+              <div class="p-4">
+                <h3 class="card-title">Sobre la Cumbre de Sostenibilidad 2025
+                  Uniendo Fuerzas para un Futuro Sostenible</h3>
+                <p class="card-text">
+                  Reuniremos en el Centro de Convenciones de Quito a líderes, empresas, ONGs y organizaciones de todo el mundo para un evento transformador que trasciende las palabras y se centra en la acción. Durante esta cumbre, compartiremos una visión común a través de conferencias inspiradoras, actividades de networking y experiencias inmersivas, diseñadas para fomentar la colaboración y el aprendizaje mutuo.
+                </p>
+                <a href="https://ekoscumbresostenibilidad.com/" class="btn btn-outline-primary btn-sm" target="_blank">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Noticia 3 -->
+        <div class="carousel-item">
+          <div class="row g-0 align-items-center">
+            <!-- Miniatura de la noticia -->
+            <div class="col-md-4">
+              <img src="https://img.youtube.com/vi/6x3gkUe7O4I/hqdefault.jpg" class="img-fluid" style="height: 250px; object-fit: cover;">
+
+            </div>
+            <!-- Texto de la noticia -->
+            <div class="col-md-8">
+              <div class="p-4">
+                <h3 class="card-title">EL MUSEO MÁS FUTURISTA Y ESPECTACULAR DEL MUNDO</h3>
+                <p class="card-text">
+                  Bienvenidos al cuarto y último video de nuestra fascinante saga China Learning Tour. En esta entrega final, vamos a sumergirnos en la China del Futuro como nunca antes lo habías imaginado.
+                </p>
+                <a href="https://www.youtube.com/watch?v=6x3gkUe7O4I" class="btn btn-outline-primary btn-sm" target="_blank">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
 
     <!-- Sección Nosotros -->
     <section id="nosotros" class="py-5">
@@ -707,6 +785,9 @@
             >
               Cerrar
             </button>
+            <a href="assets/equipo/curriculumVitae.pdf" target="_blank" class="btn btn-secondary">
+              Ver Curriculum (PDF)
+            </a>
           </div>
         </div>
       </div>
@@ -1182,7 +1263,7 @@
             <div class="mb-4">
               <!-- Google Maps -->
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889527!2d-58.38157042373903!3d-34.60373445749642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf425a4b1f%3A0x7d60e5f5d5a5a5a5!2sObelisco%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1690833333333!5m2!1ses-419!2sar"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.527690945451!2d-78.48522117865166!3d-0.2951555034560274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5a34b110abec3%3A0xbd80700405c4ea2c!2sBulevar%20de%20las%20Acacias%203!5e0!3m2!1ses!2sec!4v1739894773874!5m2!1ses!2sec"
                 width="100%"
                 height="300"
                 style="border: 0"
@@ -1199,12 +1280,11 @@
               </li>
               <li>
                 <i class="fas fa-envelope"></i>
-                fadepsecuador@gmail.com
+                <p>fadepsecuador@gmail.com</p>
               </li>
               <li>
                 <i class="fas fa-map-marker-alt"></i>
-                Ontaneda_Conocoto_Quito_Pichincha
-              </li>
+                Abdón Calderón - Bulevar de las Acacias, 3-30, Conocoto, Quito, Pichincha.
             </ul>
           </div>
         </div>
@@ -1212,47 +1292,70 @@
     </section>
 
     <!-- Sección Lo Último -->
-    <section id="ultimo" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Lo Último en Fadeps</h2>
-        <div class="row">
-          <!-- Historia -->
-          <div class="col-md-6 fade-in">
-            <h3>Nuestra Historia</h3>
-            <p>
-              En el año 2023 en una reunión de amigos que manejan los mismos
-              ideales nació la idea de crear una fundación en beneficio del
-              sector productivo, es así como damos los primeros pasos para
-              cumplir este maravilloso sueño. ► En marzo de 2024 nos reconoce el
-              Ministerio de Producción, Comercio Exterior, Inversiones y Pesca
-              (MPCEIP) y nos otorga personería jurídica mediante Resolución Nro.
-              MPCEIP-CGAJ-2024-0034-R. ► Actualmente nos encontramos trabajando
-              en diversos proyectos para dar inicio a esta noble labor de servir
-              a los sectores económicos, productivos y sociales que nos
-              necesitan. ► El fortalecer lazos a nivel nacional e internacional
-              nos llevó a trabajar en alianzas estratégicas que estamos
-              emocionados y próximos a notificarlos.
+<!-- Sección Lo Último -->
+<section id="ultimo" class="py-5">
+  <div class="container">
+    <!-- Título de la sección -->
+    <h2 class="text-center mb-5">Lo Último en FADEPS</h2>
+    <div class="row">
+      <!-- Columna: Nuestra Historia -->
+      <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000">
+        <h3 class="mb-4">Nuestra Historia</h3>
+        <p class="lead">
+          En el año 2023, en una reunión de amigos que comparten los mismos ideales, nació la idea de crear una fundación en beneficio del sector productivo. Así dimos los primeros pasos para cumplir este maravilloso sueño.
+        </p>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <strong>Marzo 2024:</strong> El Ministerio de Producción, Comercio Exterior, Inversiones y Pesca (MPCEIP) nos reconoce y otorga personería jurídica mediante Resolución Nro. MPCEIP-CGAJ-2024-0034-R.
+          </li>
+          <li class="mb-3">
+            <strong>Actualmente:</strong> Trabajamos en diversos proyectos para dar inicio a esta noble labor de servir a los sectores económicos, productivos y sociales que nos necesitan.
+          </li>
+          <li class="mb-3">
+            <strong>Alianzas estratégicas:</strong> Estamos fortaleciendo lazos a nivel nacional e internacional y próximamente compartiremos noticias emocionantes al respecto.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Columna: Novedades y Avances -->
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000" >
+        <h3 class="mb-4">Novedades y Avances</h3>
+        <!-- Tarjeta 1 -->
+        <div class="card mb-3 shadow-sm bg-light">
+
+          <div class="card-body" style="background-color: #e6e4d8;">
+            <h5 class="card-title text-info">Nuevo Proyecto en Desarrollo</h5>
+            <p class="card-text">
+             Ejm: Estamos desarrollando un proyecto enfocado en la capacitación de emprendedores rurales. Pronto compartiremos más detalles.
             </p>
-          </div>
-          <!-- Novedades -->
-          <div class="col-md-6 fade-in">
-            <h3>Novedades y Avances</h3>
-            <div class="card mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Novedad</h5>
-                <p class="card-text">Logo TRCO</p>
-              </div>
-            </div>
-            <div class="card mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Novedad</h5>
-                <p class="card-text">Logo Otros</p>
-              </div>
-            </div>
+            <a href="#" class="btn btn-outline-info btn-sm">Más información</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Socios -->
+<section id="socios" class="py-5">
+  <div class="container-fluid px-lg-5" data-aos="fade-right" data-aos-duration="1000">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10 col-12">
+        <!-- Tarjeta de Alianza Estratégica -->
+        <div class="card mb-3 shadow-sm bg-light">
+          <div class="card-body text-center py-4" style="background-color: #e6e4d8;">
+            <h5 class="card-title text-info">Nueva Alianza Estratégica</h5>
+            <p class="card-text">
+              Ejm: Nos complace anunciar nuestra alianza con TRCO, una organización líder en desarrollo sostenible. Juntos trabajaremos en proyectos innovadores para el sector productivo.
+            </p>
+            <img src="assets/logo-trco.png" alt="Logo TRCO" class="img-fluid mb-3 mx-auto" style="max-width: 150px;">
+            <a href="#" class="btn btn-outline-info btn-sm">Más información</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
@@ -1262,9 +1365,9 @@
           <a href="#" class="text-white me-3">
             <i class="fab fa-facebook"></i>
           </a>
-          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
           <a href="#" class="text-white me-3">
             <i class="fab fa-instagram"></i>
+            <a href="#" class="text-white me-3"><i class="fas fa-envelope"></i></a>
           </a>
         </div>
       </div>
@@ -1272,7 +1375,7 @@
 
     <!-- Botón de WhatsApp -->
     <a
-      href="https://wa.me/5491112345678"
+      href="https://wa.me/+593997792509"
       target="_blank"
       class="whatsapp-button"
     >
