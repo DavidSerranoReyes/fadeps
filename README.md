@@ -30,22 +30,11 @@ This landing page provides an intuitive and dynamic user experience, designed to
 1. Clone this repository:
 
    ```
-   git clone https://github.com/yourusername/foundation-landing-page.git
+   git clone https://github.com/DavidSerranoReyes/fadeps.git
    ```
 
-2. Navigate to the project directory:
 
-   ```
-   cd foundation-landing-page
-   ```
-
-3. Open the project in VS Code:
-
-   ```
-   code .
-   ```
-
-4. Use a local development server to view the project (e.g., VS Code's Live Server extension)
+2. Use a local development server to view the project (e.g., VS Code's Live Server extension)
 
 ## 📱 Responsive Design
 
