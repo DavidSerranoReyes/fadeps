@@ -105,3 +105,111 @@ titulo.addEventListener('mouseover', () => {
 titulo.addEventListener('mouseout', () => {
   titulo.style.transform = 'scale(1)';
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Define the news items
+  const newsItems = [
+    {
+      title: 'EL PAÍS DONDE LA MENTE HUMANA ES VALORADA PREMIADA Y CELEBRADA',
+      description:
+        '¿Están listos para un viaje que sacudirá sus neuronas de pura inspiración? ¡Bienvenidos a "El país donde la mente humana es valorada, premiada y celebrada" y no, no es un cuento de hadas, es Suecia, la tierra de las ideas revolucionarias!',
+      imageUrl: 'https://img.youtube.com/vi/BL10m90XeCk/maxresdefault.jpg',
+      imageAlt: 'País donde la mente humana es valorada',
+      link: 'https://www.youtube.com/watch?v=BL10m90XeCk',
+    },
+    {
+      title:
+        'Sobre la Cumbre de Sostenibilidad 2025: Uniendo Fuerzas para un Futuro Sostenible',
+      description:
+        'Reuniremos en el Centro de Convenciones de Quito a líderes, empresas, ONGs y organizaciones de todo el mundo para un evento transformador que trasciende las palabras y se centra en la acción.',
+      imageUrl:
+        'https://ekoscumbresostenibilidad.com/images/2025/01/28/cumbres-sostenibilidad-2025.jpg',
+      imageAlt: 'Cumbre de Sostenibilidad 2025',
+      link: 'https://ekoscumbresostenibilidad.com/',
+    },
+    {
+      title: 'EL MUSEO MÁS FUTURISTA Y ESPECTACULAR DEL MUNDO',
+      description:
+        'Bienvenidos al cuarto y último video de nuestra fascinante saga China Learning Tour. En esta entrega final, vamos a sumergirnos en la China del Futuro como nunca antes lo habías imaginado.',
+      imageUrl: 'https://img.youtube.com/vi/6x3gkUe7O4I/hqdefault.jpg',
+      imageAlt: 'Museo futurista',
+      link: 'https://www.youtube.com/watch?v=6x3gkUe7O4I',
+    },
+    {
+      title:
+        '¿Cómo logró Ecuador ser pionero mundial de producción sin deforestación?',
+      description:
+        'Un programa iniciado en 2017 dio sus frutos y logró que Ecuador sea pionero mundial de producción sin deforestación y con prácticas sostenibles, según el PNUD.',
+      imageUrl:
+        'https://www.lahora.com.ec/wp-content/uploads/2025/03/468094070_977017674455375_8809820703951748435_n.jpg',
+      imageAlt: 'Ecuador sin deforestación',
+      link: 'https://www.lahora.com.ec/pais/como-logro-ecuador-ser-pionero-mundial-de-produccion-sin-deforestacion/',
+    },
+  ];
+
+  // Get the container for the carousel
+  const carouselContainer = document.getElementById('newsCarouselContainer');
+
+  // Create the carousel structure
+  let carouselHTML = `
+    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-indicators">
+        ${newsItems
+          .map(
+            (item, index) => `
+          <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="${index}" 
+            ${index === 0 ? 'class="active" aria-current="true"' : ''} 
+            aria-label="Noticia ${index + 1}"></button>
+        `
+          )
+          .join('')}
+      </div>
+      
+      <div class="carousel-inner">
+        ${newsItems
+          .map(
+            (item, index) => `
+          <div class="carousel-item ${index === 0 ? 'active' : ''}">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4">
+                <img src="${item.imageUrl}" alt="${item.imageAlt}" class="img-fluid rounded-start" 
+                  ${index === 0 ? 'loading="eager"' : 'loading="lazy"'} width="640" height="360">
+              </div>
+              <div class="col-md-8">
+                <div class="p-4">
+                  <h3 class="card-title h5">${item.title}</h3>
+                  <p class="card-text">${item.description}</p>
+                  <a href="${item.link}" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        `
+          )
+          .join('')}
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  `;
+
+  // Insert the carousel into the container
+  carouselContainer.innerHTML = carouselHTML;
+
+  // Initialize the Bootstrap carousel
+  const carousel = new bootstrap.Carousel(
+    document.getElementById('newsCarousel'),
+    {
+      interval: 4000,
+      wrap: true,
+      keyboard: true,
+    }
+  );
+});
