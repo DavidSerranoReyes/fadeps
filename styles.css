@@ -3,9 +3,9 @@ body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(
     to right,
-    rgba(250, 238, 208, 0.8),
-    rgba(247, 240, 220, 0.8),
-    rgba(248, 234, 192, 0.8)
+    rgba(236, 231, 217, 0.8),
+    rgba(207, 200, 179, 0.8),
+    rgba(224, 219, 199, 0.8)
   );
 
   color: #3f1177; /* Texto oscuro */
@@ -523,4 +523,125 @@ footer a:hover {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Estilos para sección de socios */
+#socios {
+  background-color: #fafafa;
+}
+
+#socios .divider {
+  width: 50px;
+  height: 3px;
+  background-color: #0d6efd;
+  margin-bottom: 20px;
+}
+
+.partner-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  padding: 30px;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.partner-content h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.partner-content p {
+  color: #6c757d;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.partner-link {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.partner-link:hover {
+  color: #0a58ca;
+}
+
+.partnership-banner {
+  background-color: #e9f0ff;
+  border: 1px solid #d1e3ff;
+}
+
+/* Estilos para la sección Lo Último */
+#ultimo .divider {
+  width: 50px;
+  height: 3px;
+  background-color: #0d6efd;
+  margin-bottom: 20px;
+}
+
+.history-card,
+.news-card {
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.history-card:hover,
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-list .timeline-icon {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  border-radius: 50%;
+  background-color: #e8f0fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-soon-container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coming-soon-icon {
+  color: #6c757d;
+  opacity: 0.7;
+}
+
+.news-date {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 5px 10px;
+  min-width: 50px;
+}
+
+.news-date small {
+  font-size: 0.7rem;
+  color: #6c757d;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* O la altura que consideres adecuada */
+  overflow: hidden;
 }
