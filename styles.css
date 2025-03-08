@@ -646,3 +646,10 @@ html {
   height: 100%; /* O la altura que consideres adecuada */
   overflow: hidden;
 }
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background-color: #007bff; /* o el color que prefieras */
+  margin-top: 10px;
+}
