@@ -88,7 +88,7 @@ body {
         rgba(100, 100, 100, 0)
       ); /* Línea 3 */
   background-size:
-    280px 190px,
+    290px 190px,
     /* Tamaño de la bandera (ajusta estos valores según necesites) */ 100% 4px,
     /* Ancho y alto de la línea 1 */ 100% 4px,
     /* Ancho y alto de la línea 2 */ 100% 4px; /* Ancho y alto de la línea 3 */
@@ -100,7 +100,24 @@ body {
     /* Posición de la línea 2 */ 0 98%; /* Posición de la línea 3 */
 
   background-repeat: no-repeat; /* Evita que se repitan las imágenes y líneas */
+  padding-bottom: 250px;
 }
+.header-background img {
+  margin-bottom: 30px; /* Espacio debajo del logo */
+}
+
+.header-background h1 {
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.header-background p {
+  margin-bottom: 30px; /* Espacio debajo de la descripción */
+}
+
+.header-background .social-icons {
+  margin-top: 20px; /* Espacio adicional entre los iconos sociales y el contenido de arriba */
+}
+
 /* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
   .header-background {
@@ -109,6 +126,9 @@ body {
       /* Tamaño de la bandera en móvil (ajusta estos valores) */ 100% 4px,
       /* Línea 1 */ 100% 4px,
       /* Línea 2 */ 100% 4px; /* Línea 3 */
+  }
+  .social-icons {
+    margin-bottom: 40px;
   }
 }
 
