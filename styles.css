@@ -72,6 +72,7 @@ body {
 
 .header-background {
   background-color: white; /* Fondo blanco */
+  min-height: 90vh;
   background-image:
     url('assets/logobandera.webp'),
     linear-gradient(to right, rgba(31, 102, 160, 0.5), rgba(200, 200, 200, 0)),
@@ -100,22 +101,21 @@ body {
     /* Posición de la línea 2 */ 0 98%; /* Posición de la línea 3 */
 
   background-repeat: no-repeat; /* Evita que se repitan las imágenes y líneas */
-  padding-bottom: 250px;
 }
 .header-background img {
   margin-bottom: 30px; /* Espacio debajo del logo */
 }
 
 .header-background h1 {
-  margin-bottom: 20px; /* Espacio debajo del título */
+  margin-bottom: 30px; /* Espacio debajo del título */
 }
 
 .header-background p {
-  margin-bottom: 30px; /* Espacio debajo de la descripción */
+  margin-bottom: 35px; /* Espacio debajo de la descripción */
 }
 
 .header-background .social-icons {
-  margin-top: 20px; /* Espacio adicional entre los iconos sociales y el contenido de arriba */
+  margin-top: 40px; /* Espacio adicional entre los iconos sociales y el contenido de arriba */
 }
 
 /* Ajustes para dispositivos móviles */
@@ -134,11 +134,11 @@ body {
 
 .social-icons {
   justify-content: center !important;
-  gap: 35px !important;
+  gap: 50px !important;
 }
 
 .social-icons i {
-  font-size: 35px; /* Ajusta el tamaño de los iconos */
+  font-size: 40px; /* Ajusta el tamaño de los iconos */
   color: #3f1177;
   transition: color 0.3s ease; /* Para que el color cambie con una transición suave cuando pases el cursor */
 }
