@@ -3,12 +3,19 @@ body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(
     to right,
-    rgba(236, 231, 217, 0.8),
-    rgba(207, 200, 179, 0.8),
-    rgba(224, 219, 199, 0.8)
-  );
-
-  color: #3f1177; /* Texto oscuro */
+    #cea75f,
+    #dbab5d,
+    #bd9132
+  ); /* Degradado de izquierda a derecha */
+  background: radial-gradient(
+    circle,
+    #cea558,
+    #d4ab67 #bd9132
+  ); /* Degradado radial (opcional) */
+  color: #370c6b;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
 }
 
 .navbar {
