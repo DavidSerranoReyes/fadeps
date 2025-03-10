@@ -1,186 +1,53 @@
 /* Estilos generales */
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(
-    to right,
-    #cea75f,
-    #dbab5d,
-    #bd9132
-  ); /* Degradado de izquierda a derecha */
+  background: linear-gradient(to right, #cea75f, #dbab5d, #bd9132);
   background: radial-gradient(
     circle,
     #cea558,
-    #d4ab67 #bd9132
-  ); /* Degradado radial (opcional) */
+    #d4ab67,
+    #bd9132
+  ); /* Corregido el degradado radial */
   color: #370c6b;
   margin: 0;
   padding: 0;
-  min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+  min-height: 100vh;
+  padding-top: 80px; /* Compensar la navbar fija */
 }
 
+/* Navbar mejorada */
 .navbar {
-  /* Fondo negro transparente */
   background-color: rgba(0, 0, 0, 0.6);
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   height: 80px;
+  padding: 5px 15px;
+  z-index: 1000;
+}
+/* Estilo para el logo en la navbar */
+.navbar-brand img {
+  height: 50px; /* Ajusta este valor según necesites */
+  width: auto;
+  max-width: 100%;
 }
 
-/* Estilos para el menú desplegable en móviles */
 .navbar-collapse {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.4
-  ) !important; /* Fondo negro transparente */
-  padding: 10px; /* Espaciado interno */
-  border-radius: 5px; /* Bordes redondeados */
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-/* Estilos para los enlaces del menú desplegable */
 .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.8) !important; /* Color del texto */
-  padding: 10px 15px; /* Espaciado interno */
+  color: rgba(255, 255, 255, 0.8) !important;
+  padding: 10px 15px;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: rgba(255, 255, 255, 1) !important; /* Color del texto al hacer hover */
-  background-color: rgba(255, 255, 255, 0.1); /* Fondo claro al hacer hover */
-}
-
-/* Estilos para el botón del toggler (ícono de hamburguesa) */
-.navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.8); /* Color del borde */
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Color del ícono */
-}
-
-/* Media query para pantallas pequeñas */
-@media (max-width: 767.98px) {
-  .navbar {
-    height: auto; /* Ajusta la altura automáticamente */
-    padding: 10px; /* Añade un poco de padding */
-  }
-
-  .navbar-nav .nav-link {
-    padding: 8px 12px; /* Ajusta el padding para pantallas pequeñas */
-  }
-
-  .navbar-collapse {
-    margin-top: 10px; /* Añade un margen superior */
-  }
-}
-
-body {
-  padding-top: 80px;
-}
-
-.header-background {
-  background-color: white; /* Fondo blanco */
-  min-height: 90vh;
-  background-image:
-    url('assets/logobandera.webp'),
-    linear-gradient(to right, rgba(31, 102, 160, 0.5), rgba(200, 200, 200, 0)),
-    /* Línea 1 */
-      linear-gradient(
-        to right,
-        rgba(117, 177, 196, 0.5),
-        rgba(150, 150, 150, 0)
-      ),
-    /* Línea 2 */
-      linear-gradient(
-        to right,
-        rgba(100, 100, 100, 0.5),
-        rgba(100, 100, 100, 0)
-      ); /* Línea 3 */
-  background-size:
-    290px 190px,
-    /* Tamaño de la bandera (ajusta estos valores según necesites) */ 100% 4px,
-    /* Ancho y alto de la línea 1 */ 100% 4px,
-    /* Ancho y alto de la línea 2 */ 100% 4px; /* Ancho y alto de la línea 3 */
-
-  background-position:
-    left top,
-    /* Posición de la bandera */ 0 94%,
-    /* Posición de la línea 1 */ 0 96%,
-    /* Posición de la línea 2 */ 0 98%; /* Posición de la línea 3 */
-
-  background-repeat: no-repeat; /* Evita que se repitan las imágenes y líneas */
-}
-.header-background img {
-  margin-bottom: 30px; /* Espacio debajo del logo */
-}
-
-.header-background h1 {
-  margin-bottom: 30px; /* Espacio debajo del título */
-}
-
-.header-background p {
-  margin-bottom: 35px; /* Espacio debajo de la descripción */
-}
-
-.header-background .social-icons {
-  margin-top: 60px; /* Espacio adicional entre los iconos sociales y el contenido de arriba */
-}
-
-/* Ajustes para dispositivos móviles */
-@media (max-width: 768px) {
-  .header-background {
-    background-size:
-      180px 90px,
-      /* Tamaño de la bandera en móvil (ajusta estos valores) */ 100% 4px,
-      /* Línea 1 */ 100% 4px,
-      /* Línea 2 */ 100% 4px; /* Línea 3 */
-  }
-  .social-icons {
-    margin-bottom: 40px;
-  }
-}
-
-.social-icons {
-  justify-content: center !important;
-  gap: 50px !important;
-}
-
-.social-icons i {
-  font-size: 40px; /* Ajusta el tamaño de los iconos */
-  color: #3f1177;
-  transition: color 0.3s ease; /* Para que el color cambie con una transición suave cuando pases el cursor */
-}
-
-/* Efecto de cambio de color cuando pasas el cursor por encima */
-.social-icons i:hover {
-  color: #d69d02; /* Cambia el color al pasar el ratón */
-}
-
-/* Logo */
-.custom-logo {
-  width: 60px;
-  height: 60px;
-}
-
-/* Navbar */
-.navbar {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  z-index: 1000;
-}
-
-.nav-link {
-  color: #fff !important;
-  font-weight: bold;
-}
-
-.nav-link:hover {
-  color: #d69d02 !important;
-  text-decoration: underline; /* Subrayado en hover */
-}
-
-.navbar-nav .nav-link {
-  position: relative;
-  text-decoration: none; /* Eliminamos el subrayado predeterminado */
+  color: rgba(255, 255, 255, 1) !important;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar-nav .nav-link::after {
@@ -195,84 +62,161 @@ body {
 }
 
 .navbar-nav .nav-link:hover::after {
-  width: 100%; /* El subrayado se expandirá al 100% */
+  width: 100%;
 }
 
-/* Estilos para el carrusel */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
+  transform: rotate(90deg);
+}
+
+/* Header y logo */
+.header-background {
+  background-color: white;
+  min-height: 90vh;
+  background-image: url('assets/logobandera.webp'),
+    linear-gradient(to right, rgba(31, 102, 160, 0.5), rgba(200, 200, 200, 0)),
+    linear-gradient(to right, rgba(117, 177, 196, 0.5), rgba(150, 150, 150, 0)),
+    linear-gradient(to right, rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0));
+  background-size:
+    290px 190px,
+    100% 4px,
+    100% 4px,
+    100% 4px;
+  background-position:
+    left top,
+    0 94%,
+    0 96%,
+    0 98%;
+  background-repeat: no-repeat;
+  padding: 60px 0; /* Mejor control del espaciado superior e inferior */
+}
+
+.header-background img {
+  margin-bottom: 30px;
+  max-width: 100%; /* Asegura que el logo no desborde en dispositivos pequeños */
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.header-background h1 {
+  margin-bottom: 30px;
+  font-size: calc(1.8rem + 1.5vw); /* Tamaño de fuente responsive */
+  transition: all 0.3s ease;
+}
+
+.header-background p {
+  margin-bottom: 35px;
+  font-size: calc(1rem + 0.3vw); /* Tamaño de fuente responsive */
+  max-width: 90%; /* Mantiene el texto más contenido */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Iconos sociales */
+.social-icons {
+  display: flex;
+  justify-content: center !important;
+  gap: 50px !important;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.social-icons i {
+  font-size: 45px;
+  color: #3f1177;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #d69d02;
+  transform: scale(1.1);
+}
+
+/* Carrusel mejorado */
 #newsCarousel {
-  width: 100%; /* Ocupa todo el ancho de la pantalla */
-  margin: 0 auto;
+  width: 100%;
+  margin: 0 auto 30px;
   position: relative;
 }
 
 #newsCarousel .carousel-inner {
-  padding: 20px 0; /* Espaciado vertical */
+  padding: 20px 0;
 }
 
 #newsCarousel .carousel-item {
-  background-color: #fff; /* Fondo blanco para las noticias */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 #newsCarousel .img-fluid {
-  height: 200px; /* Altura fija para las miniaturas */
-  object-fit: cover; /* Ajustar la imagen sin distorsionar */
-  border-radius: 10px 0 0 10px; /* Bordes redondeados solo en la izquierda */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; /* Ajustado para mejor visualización en móviles */
 }
 
 #newsCarousel .btn-outline-primary {
-  border-color: #2c3e50; /* Color del borde del botón */
-  color: #2c3e50; /* Color del texto del botón */
-  transition: all 0.3s ease; /* Transición suave */
+  border-color: #2c3e50;
+  color: #2c3e50;
+  transition: all 0.3s ease;
 }
 
 #newsCarousel .btn-outline-primary:hover {
-  background-color: #2c3e50; /* Fondo al hacer hover */
-  color: #fff; /* Texto blanco al hacer hover */
+  background-color: #2c3e50;
+  color: #fff;
 }
 
-/* Estilos para los controles del carrusel (flechas) */
 #newsCarousel .carousel-control-prev,
 #newsCarousel .carousel-control-next {
-  width: 40px; /* Ancho de las flechas */
-  height: 40px; /* Alto de las flechas */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-  border-radius: 50%; /* Forma circular */
-  top: 50%; /* Centrar verticalmente */
-  transform: translateY(-50%); /* Ajuste fino para centrar */
-  opacity: 0.5; /* Transparencia */
-  transition: opacity 0.3s ease; /* Transición suave */
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
 }
 
 #newsCarousel .carousel-control-prev {
-  left: 15px; /* Posición desde la izquierda */
+  left: 15px;
 }
 
 #newsCarousel .carousel-control-next {
-  right: 15px; /* Posición desde la derecha */
+  right: 15px;
 }
 
 #newsCarousel .carousel-control-prev:hover,
 #newsCarousel .carousel-control-next:hover {
-  opacity: 1; /* Sin transparencia al hacer hover */
-}
-
-/* Pausar el carrusel al hacer hover */
-#newsCarousel:hover .carousel-inner {
-  transition: none;
+  opacity: 1;
 }
 
 /* Botones */
 .btn-primary {
-  background-color: #9c27b0; /* Morado secundario */
+  background-color: #9c27b0;
   border: none;
   padding: 10px 20px;
   font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border-radius: 30px; /* Bordes más redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .btn-primary:hover {
-  background-color: #190327; /* Morado principal */
+  background-color: #190327;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Tarjetas */
@@ -283,6 +227,8 @@ body {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+  height: 100%; /* Asegura altura igual para todas las tarjetas */
+  overflow: hidden;
 }
 
 .card:hover {
@@ -290,39 +236,36 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Ajustar el margen superior del header */
-header {
-  padding-top: 80px;
-  display: flex;
+.card-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #3c1850;
+  margin-bottom: 15px;
 }
 
-/* Animaciones */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  color: rgb(92, 91, 91);
 }
 
-.fade-in {
-  animation: fadeIn 1s ease-out;
+#nosotros .card-text,
+#productos .card-text {
+  font-size: 18px;
 }
 
 /* Secciones */
 section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 0;
 }
 
 /* Footer */
 footer {
   background-color: #6a1b9a;
   color: #fff;
-  padding: 20px 0;
+  padding: 30px 0;
+  margin-top: 40px;
 }
 
 footer a {
@@ -330,10 +273,14 @@ footer a {
   text-decoration: none;
   font-size: 1.5rem;
   margin: 0 10px;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 footer a:hover {
   color: #ffeb3b;
+  transform: scale(1.1);
 }
 
 /* Botón de WhatsApp */
@@ -341,7 +288,7 @@ footer a:hover {
   position: fixed;
   bottom: 30px;
   right: 20px;
-  background-color: #25d366; /* Color de WhatsApp */
+  background-color: #25d366;
   color: #fff;
   width: 70px;
   height: 70px;
@@ -351,10 +298,12 @@ footer a:hover {
   justify-content: center;
   font-size: 34px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-  text-decoration: none; /* Elimina el subrayado */
-  animation: titilar 1.5s infinite; /* Animación de titilar */
-  z-index: 1001; /* Asegurar que esté por encima del navbar */
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+  text-decoration: none;
+  animation: titilar 1.5s infinite;
+  z-index: 1001;
 }
 
 .whatsapp-button:hover {
@@ -363,7 +312,6 @@ footer a:hover {
   color: #fff;
 }
 
-/* Animación de titilar */
 @keyframes titilar {
   0%,
   100% {
@@ -376,68 +324,7 @@ footer a:hover {
   }
 }
 
-/* Color personalizado para los íconos */
-.text-purple {
-  color: #6a1b9a; /* Morado principal */
-}
-
-/* Espaciado y tipografía */
-.card-title {
-  font-size: 1.75rem;
-  font-weight: bold;
-  color: #211627;
-}
-
-.card-text {
-  font-size: 1rem;
-  line-height: 1.6;
-  text-align: left;
-  color: rgb(92, 91, 91);
-}
-#nosotros .card-text {
-  font-size: 18px; /* Ajusta el tamaño del texto dentro de la sección con ID "ultimo" */
-}
-#productos .card-text {
-  font-size: 18px; /* Ajusta el tamaño del texto dentro de la sección con ID "ultimo" */
-}
-
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-  header p {
-    font-size: 1.2rem;
-  }
-
-  /* Navbar en dispositivos móviles */
-  .navbar-nav .nav-link {
-    font-size: 1.1rem;
-  }
-
-  /* Botón de WhatsApp en dispositivos móviles */
-  .whatsapp-button {
-    bottom: 20px;
-    right: 10px;
-    font-size: 28px;
-    transform: translateZ(0);
-  }
-}
-
-/* Rotación del ícono del toggler */
-.navbar-toggler-icon {
-  transition: transform 0.3s ease;
-}
-
-.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
-  transform: rotate(90deg);
-}
-
-:root {
-  --main-color: #6a1b9a;
-  --shadow-color: rgba(0, 0, 0, 0.2);
-}
-
-/* Imagen circular con efecto hover */
+/* Imágenes de equipo */
 .image-container {
   position: relative;
   display: inline-block;
@@ -449,6 +336,7 @@ footer a:hover {
     transform 0.3s ease,
     box-shadow 0.3s ease;
   cursor: pointer;
+  margin: 0 auto 20px; /* Centrado y espaciado inferior */
 }
 
 .team-image {
@@ -468,15 +356,16 @@ footer a:hover {
 }
 
 .image-container:hover {
-  box-shadow: 0 4px 8px var(--shadow-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Modales */
 .modal-content {
   border-radius: 15px;
 }
 
 .modal-header {
-  background-color: var(--main-color);
+  background-color: #6a1b9a;
   color: white;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -485,10 +374,12 @@ footer a:hover {
 .modal-body img {
   display: block;
   margin: 0 auto 1rem;
+  border-radius: 8px;
 }
 
 .modal-body ul {
   padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 .modal-body ul li {
@@ -496,10 +387,10 @@ footer a:hover {
 }
 
 .modal-body strong {
-  color: var(--main-color);
+  color: #6a1b9a;
 }
 
-/* Indicador de clic en móvil */
+/* Indicador de clic */
 .click-indicator {
   display: none;
   position: absolute;
@@ -517,52 +408,18 @@ footer a:hover {
   z-index: 10;
 }
 
-@media (max-width: 767.98px) {
-  .click-indicator {
-    display: block;
-    opacity: 0.8;
-  }
-
-  .image-container:active .click-indicator {
-    opacity: 1;
-  }
-
-  .image-container {
-    cursor: pointer;
-  }
-
-  .team-image:active {
-    transform: scale(1.05);
-  }
-}
-
-@media (min-width: 768px) {
-  .click-indicator {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .mx-auto {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Estilos para sección de socios */
+/* Sección de socios */
 #socios {
   background-color: #fafafa;
+  padding: 80px 0;
 }
 
-#socios .divider {
+#socios .divider,
+#ultimo .divider {
   width: 50px;
   height: 3px;
   background-color: #0d6efd;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 .partner-card {
@@ -574,6 +431,7 @@ html {
     transform 0.3s,
     box-shadow 0.3s;
   padding: 30px;
+  height: 100%;
 }
 
 .partner-card:hover {
@@ -608,20 +466,19 @@ html {
 .partnership-banner {
   background-color: #e9f0ff;
   border: 1px solid #d1e3ff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
-/* Estilos para la sección Lo Último */
-#ultimo .divider {
-  width: 50px;
-  height: 3px;
-  background-color: #0d6efd;
-  margin-bottom: 20px;
-}
-
+/* Noticias */
 .history-card,
 .news-card {
   transition: transform 0.3s ease;
   height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .history-card:hover,
@@ -629,29 +486,12 @@ html {
   transform: translateY(-5px);
 }
 
-.timeline-list .timeline-icon {
-  width: 30px;
-  height: 30px;
-  min-width: 30px;
-  border-radius: 50%;
-  background-color: #e8f0fe;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.coming-soon-container {
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  height: 100%;
+.news-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.coming-soon-icon {
-  color: #6c757d;
-  opacity: 0.7;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
 }
 
 .news-date {
@@ -666,17 +506,233 @@ html {
   color: #6c757d;
 }
 
-.news-card {
+.coming-soon-container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%; /* O la altura que consideres adecuada */
-  overflow: hidden;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.coming-soon-icon {
+  color: #6c757d;
+  opacity: 0.7;
+  font-size: 3rem;
+  margin-bottom: 15px;
 }
 
 .divider {
   width: 60px;
   height: 2px;
-  background-color: #007bff; /* o el color que prefieras */
-  margin-top: 10px;
+  background-color: #007bff;
+  margin: 10px auto 20px;
+}
+
+/* Media queries para diferentes dispositivos */
+@media (max-width: 1199.98px) {
+  .header-background {
+    background-size:
+      250px 160px,
+      100% 4px,
+      100% 4px,
+      100% 4px;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .social-icons {
+    gap: 30px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  section {
+    padding: 60px 0;
+  }
+
+  .header-background {
+    min-height: 80vh;
+  }
+
+  .partner-card {
+    padding: 20px;
+  }
+
+  .social-icons i {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar {
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 8px 12px;
+  }
+
+  .navbar-collapse {
+    margin-top: 10px;
+  }
+
+  .header-background {
+    background-size:
+      180px 90px,
+      100% 4px,
+      100% 4px,
+      100% 4px;
+    min-height: auto;
+    padding: 40px 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  header p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  .social-icons {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 30px !important;
+  }
+
+  .social-icons i {
+    font-size: 30px;
+  }
+
+  #newsCarousel .img-fluid {
+    height: 160px;
+  }
+
+  .click-indicator {
+    display: block;
+    opacity: 0.8;
+  }
+
+  .image-container:active .click-indicator {
+    opacity: 1;
+  }
+
+  .team-image:active {
+    transform: scale(1.05);
+  }
+
+  .whatsapp-button {
+    bottom: 20px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header-background {
+    background-size:
+      150px 80px,
+      100% 3px,
+      100% 3px,
+      100% 3px;
+    padding: 30px 0;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .social-icons {
+    gap: 20px !important;
+  }
+
+  .social-icons i {
+    font-size: 28px;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  #nosotros .card-text,
+  #productos .card-text {
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+  }
+
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .image-container {
+    width: 150px;
+    height: 170px;
+  }
+
+  .divider {
+    width: 40px;
+    margin: 10px auto 15px;
+  }
+
+  #newsCarousel .carousel-control-prev,
+  #newsCarousel .carousel-control-next {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-background {
+    background-size:
+      120px 70px,
+      100% 3px,
+      100% 3px,
+      100% 3px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .social-icons i {
+    font-size: 24px;
+  }
+
+  .social-icons {
+    gap: 15px !important;
+  }
+}
+
+/* Mejora para scroll suave */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Considera la altura de la navbar fija */
 }
