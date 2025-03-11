@@ -123,8 +123,8 @@ body {
 
 /* En el CSS */
 .logo-principal {
-  width: 400px !important;
-  max-width: 400px !important;
+  width: 460px !important;
+  max-width: 460px !important;
   height: auto !important;
 }
 
@@ -136,7 +136,7 @@ body {
 
 @media (max-width: 575.98px) {
   .logo-principal {
-    max-width: 250px !important;
+    max-width: 260px !important;
   }
 }
 
