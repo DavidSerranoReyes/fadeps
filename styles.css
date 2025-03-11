@@ -123,9 +123,21 @@ body {
 
 /* En el CSS */
 .logo-principal {
-  width: 280px !important;
-  max-width: 280px !important;
+  width: 400px !important;
+  max-width: 400px !important;
   height: auto !important;
+}
+
+@media (max-width: 767.98px) {
+  .logo-principal {
+    max-width: 280px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .logo-principal {
+    max-width: 250px !important;
+  }
 }
 
 /* Iconos sociales */
