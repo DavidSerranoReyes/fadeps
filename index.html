@@ -9,6 +9,7 @@
 
     <title>Fundación Fadeps</title>
 
+    <link rel="icon" href="https://www.fadeps.org/favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -35,6 +36,7 @@
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+ 
   <body>
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -137,14 +139,14 @@
   </div>
 </section>
 
-   <!-- Sección Nosotros -->
+ <!-- Sección Nosotros -->
 <section id="nosotros" class="py-5">
   <div class="container-fluid">
-    <!-- Título de la sección con el mismo formato -->
+    <!-- Título de la sección con animación mejorada -->
     <div class="row mb-5">
       <div class="col-12 text-center">
-        <h2 class="fw-bold animate__animated animate__fadeIn">Nosotros</h2>
-        <div class="divider mx-auto"></div>
+        <h2 class="fw-bold" data-aos="fade-down" data-aos-duration="800">Nosotros</h2>
+        <div class="divider mx-auto" data-aos="zoom-in" data-aos-delay="300"></div>
       </div>
     </div>
     <div class="row justify-content-around">
@@ -156,10 +158,10 @@
           >
             <div class="card h-100 shadow-lg border-0">
               <div class="card-body text-center p-4">
-                <i class="fas fa-users fa-4x mb-4 text-purple"></i>
+                <i class="fas fa-users fa-4x mb-4 text-purple" data-aos="zoom-in" data-aos-delay="200"></i>
                 <!-- Icono -->
-                <h3 class="card-title mb-3">¿Quiénes Somos?</h3>
-                <p class="card-text">
+                <h3 class="card-title mb-3" data-aos="fade-up" data-aos-delay="300">¿Quiénes Somos?</h3>
+                <p class="card-text" data-aos="fade-up" data-aos-delay="400">
                   Somos una Fundación sin fines de lucro creada para proponer y
                   fomentar el desarrollo económico, productivo y social a nivel
                   nacional, con especial énfasis a comunidades, actores
@@ -183,10 +185,10 @@
           >
             <div class="card h-100 shadow-lg border-0">
               <div class="card-body text-center p-4">
-                <i class="fas fa-handshake fa-4x mb-4 text-purple"></i>
+                <i class="fas fa-handshake fa-4x mb-4 text-purple" data-aos="zoom-in" data-aos-delay="300"></i>
                 <!-- Icono -->
-                <h3 class="card-title mb-3">¿Qué Hacemos?</h3>
-                <p class="card-text">
+                <h3 class="card-title mb-3" data-aos="fade-up" data-aos-delay="400">¿Qué Hacemos?</h3>
+                <p class="card-text" data-aos="fade-up" data-aos-delay="500">
                   Impulsamos servicios de asesoría, asistencia técnica y
                   consultoría con sólidos programas para fomentar la
                   productividad en los sectores económicos y la implementación
@@ -207,10 +209,10 @@
           >
             <div class="card h-100 shadow-lg border-0">
               <div class="card-body text-center p-4">
-                <i class="fas fa-bullseye fa-4x mb-4 text-purple"></i>
+                <i class="fas fa-bullseye fa-4x mb-4 text-purple" data-aos="zoom-in" data-aos-delay="400"></i>
                 <!-- Icono -->
-                <h3 class="card-title mb-3">Ámbito de Acción</h3>
-                <p class="card-text">
+                <h3 class="card-title mb-3" data-aos="fade-up" data-aos-delay="500">Ámbito de Acción</h3>
+                <p class="card-text" data-aos="fade-up" data-aos-delay="600">
                   Proponer y fomentar la generación de capacidades productivas y
                   el desarrollo económico, productivo y social con especial
                   énfasis en las comunidades, actores y asociaciones
@@ -223,61 +225,67 @@
       </div>
     </section>
 
-   <!-- Sección Equipo -->
+  <!-- Sección Equipo -->
 <section id="equipo" class="py-5 bg-light">
   <div class="container">
-    <!-- Título de la sección con el mismo formato -->
+    <!-- Título de la sección con animación mejorada -->
     <div class="row mb-5">
       <div class="col-12 text-center">
-        <h2 class="fw-bold animate__animated animate__fadeIn">Nuestro Equipo</h2>
-        <div class="divider mx-auto"></div>
+        <h2 class="fw-bold" data-aos="fade-down" data-aos-duration="800">Nuestro Equipo</h2>
+        <div class="divider mx-auto" data-aos="zoom-in" data-aos-delay="300"></div>
       </div>
     </div>
     <div class="row">
           <!-- Miembro 1 -->
-          <div class="col-md-4 text-center fade-in">
+          <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
             <div
               class="image-container"
               data-bs-toggle="modal"
               data-bs-target="#modalMiembro1"
+              data-aos="zoom-in" 
+              data-aos-delay="200"
             >
               <img
                 src="assets/equipo/foto1.webp"
                 alt="Miembro 1"
                 class="img-fluid team-image"
               />
-              <div class="click-indicator">
+              <div class="click-indicator" data-aos="fade-in" data-aos-delay="400">
                 <p>¡Haz clic para más info!</p>
               </div>
             </div>
-            <h4>Beatriz Hortencia Cóndor</h4>
-            <p class="text-muted">Presidenta</p>
+            <h4 data-aos="fade-up" data-aos-delay="300">Beatriz Hortencia Cóndor</h4>
+            <p class="text-muted" data-aos="fade-up" data-aos-delay="400">Presidenta</p>
           </div>
           <!-- Miembro 2 -->
-          <div class="col-md-4 text-center fade-in">
+          <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
             <div
               class="image-container"
               data-bs-toggle="modal"
               data-bs-target="#modalMiembro2"
+              data-aos="zoom-in" 
+              data-aos-delay="300"
             >
               <img
                 src="assets/equipo/foto2.webp"
                 alt="Miembro 2"
                 class="img-fluid team-image"
               />
-              <div class="click-indicator">
+              <div class="click-indicator" data-aos="fade-in" data-aos-delay="500">
                 <p>¡Haz clic para más info!</p>
               </div>
             </div>
-            <h4>Luis Fernando Olmedo</h4>
-            <p class="text-muted">Vicepresidente Técnico</p>
+            <h4 data-aos="fade-up" data-aos-delay="400">Luis Fernando Olmedo</h4>
+            <p class="text-muted" data-aos="fade-up" data-aos-delay="500">Vicepresidente Técnico</p>
           </div>
           <!-- Miembro 3 -->
-          <div class="col-md-4 text-center fade-in">
+          <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
             <div
               class="image-container"
               data-bs-toggle="modal"
               data-bs-target="#modalMiembro3"
+              data-aos="zoom-in" 
+              data-aos-delay="400"
             >
               <img
                 src="assets/equipo/foto3.webp"
@@ -285,69 +293,75 @@
                 class="img-fluid team-image"
               />
 
-              <div class="click-indicator">
+              <div class="click-indicator" data-aos="fade-in" data-aos-delay="600">
                 <p>¡Haz clic para más info!</p>
               </div>
             </div>
-            <h4>Olga Teresa Sánchez</h4>
-            <p class="text-muted">Vocal y Consultora Técnica</p>
+            <h4 data-aos="fade-up" data-aos-delay="500">Olga Teresa Sánchez</h4>
+            <p class="text-muted" data-aos="fade-up" data-aos-delay="600">Vocal y Consultora Técnica</p>
           </div>
           <!-- Miembro 4 -->
-          <div class="col-md-4 text-center fade-in">
+          <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="400">
             <div
               class="image-container"
               data-bs-toggle="modal"
               data-bs-target="#modalMiembro4"
+              data-aos="zoom-in" 
+              data-aos-delay="500"
             >
               <img
                 src="assets/equipo/foto4.webp"
                 alt="Miembro 4"
                 class="img-fluid team-image"
               />
-              <div class="click-indicator">
+              <div class="click-indicator" data-aos="fade-in" data-aos-delay="700">
                 <p>¡Haz clic para más info!</p>
               </div>
             </div>
-            <h4>Ana Sofía Enríquez</h4>
-            <p class="text-muted">Financiera y Consultora Técnica</p>
+            <h4 data-aos="fade-up" data-aos-delay="600">Ana Sofía Enríquez</h4>
+            <p class="text-muted" data-aos="fade-up" data-aos-delay="700">Financiera y Consultora Técnica</p>
           </div>
           <!-- Miembro 5 -->
-          <div class="col-md-4 text-center fade-in">
+          <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="500">
             <div
               class="image-container"
               data-bs-toggle="modal"
               data-bs-target="#modalMiembro5"
+              data-aos="zoom-in" 
+              data-aos-delay="600"
             >
               <img
                 src="assets/equipo/foto5.webp"
                 alt="Miembro 5"
                 class="img-fluid team-image"
               />
-              <div class="click-indicator">
+              <div class="click-indicator" data-aos="fade-in" data-aos-delay="800">
                 <p>¡Haz clic para más info!</p>
               </div>
             </div>
-            <h4>Pablo Camilo Larrea</h4>
-            <p class="text-muted">Vocal y Consultor Técnico</p>
+            <h4 data-aos="fade-up" data-aos-delay="700">Pablo Camilo Larrea</h4>
+            <p class="text-muted" data-aos="fade-up" data-aos-delay="800">Vocal y Consultor Técnico</p>
           </div>
-          <!-- Miembro 2 -->
-          <div class="col-md-4 text-center fade-in">
+          <!-- Miembro 6 -->
+          <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="600">
             <div
               class="image-container"
               data-bs-toggle="modal"
               data-bs-target="#modalMiembro6"
+              data-aos="zoom-in" 
+              data-aos-delay="700"
             >
               <img
                 src="assets/equipo/foto6.webp"
                 alt="Miembro 6"
                 class="img-fluid team-image"
               />
-              <div class="click-indicator">
+              <div class="click-indicator" data-aos="fade-in" data-aos-delay="900">
                 <p>¡Haz clic para más info!</p>
               </div>
             </div>
-            <h4>Shirly Stefany Remache</h4>
-            <p class="text-muted">Secretaria y Consultora Técnica</p>
+            <h4 data-aos="fade-up" data-aos-delay="800">Shirly Stefany Remache</h4>
+            <p class="text-muted" data-aos="fade-up" data-aos-delay="900">Secretaria y Consultora Técnica</p>
           </div>
         </div>
       </div>
@@ -988,14 +1002,14 @@
       </div>
     </div>
 
-  <!-- Sección Productos y Servicios -->
+ <!-- Sección Productos y Servicios -->
 <section id="productos" class="py-5">
   <div class="container">
-    <!-- Título de la sección con el mismo formato -->
+    <!-- Título de la sección con animación mejorada -->
     <div class="row mb-5">
       <div class="col-12 text-center">
-        <h2 class="fw-bold" data-aos="fade-down">Productos y Servicios</h2>
-        <div class="divider mx-auto"></div>
+        <h2 class="fw-bold" data-aos="fade-down" data-aos-duration="800">Productos y Servicios</h2>
+        <div class="divider mx-auto" data-aos="zoom-in" data-aos-delay="300"></div>
       </div>
     </div>
     <div class="row">
@@ -1011,12 +1025,13 @@
                 class="card-img-top"
                 alt="Producto 1"
                 data-aos="zoom-in"
+                data-aos-duration="800"
               />
               <div class="card-body">
-                <h5 class="card-title">Elaboración de Proyectos</h5>
+                <h5 class="card-title" data-aos="fade-right" data-aos-delay="200">Elaboración de Proyectos</h5>
                 <ul class="card-text">
-                  <li>De desarrollo</li>
-                  <li>De pre – factibilidad y factibilidad</li>
+                  <li data-aos="fade-up" data-aos-delay="300">De desarrollo</li>
+                  <li data-aos="fade-up" data-aos-delay="400">De pre – factibilidad y factibilidad</li>
                 </ul>
               </div>
             </div>
@@ -1033,13 +1048,14 @@
                 class="card-img-top"
                 alt="Producto 2"
                 data-aos="zoom-in"
+                data-aos-duration="800"
               />
               <div class="card-body">
-                <h5 class="card-title">
+                <h5 class="card-title" data-aos="fade-right" data-aos-delay="300">
                   Consultoría, asesoría, asistencia y apoyo técnico
                 </h5>
                 <ul class="card-text">
-                  <li>
+                  <li data-aos="fade-up" data-aos-delay="400">
                     Para el fomento de la productividad en los sectores
                     económicos y la implementación de modelos de desarrollo
                     sostenible
@@ -1060,11 +1076,12 @@
                 class="card-img-top"
                 alt="Producto 3"
                 data-aos="zoom-in"
+                data-aos-duration="800"
               />
               <div class="card-body">
-                <h5 class="card-title">Redes de apoyo</h5>
+                <h5 class="card-title" data-aos="fade-right" data-aos-delay="400">Redes de apoyo</h5>
                 <ul class="card-text">
-                  <li>
+                  <li data-aos="fade-up" data-aos-delay="500">
                     Impulsar la generación de oportunidades de empleo y la
                     creación de redes de apoyo productivo
                   </li>
@@ -1084,13 +1101,14 @@
                 class="card-img-top"
                 alt="Producto 4"
                 data-aos="zoom-in"
+                data-aos-duration="800"
               />
               <div class="card-body">
-                <h5 class="card-title">
+                <h5 class="card-title" data-aos="fade-right" data-aos-delay="500">
                   Seminarios, conferencias, foros, exposiciones, ferias
                 </h5>
                 <ul class="card-text">
-                  <li>
+                  <li data-aos="fade-up" data-aos-delay="600">
                     Realizar actividades de difusión y comunicación en materia
                     de desarrollo económico, productivo y tecnológico con
                     enfoque en sostenibilidad
@@ -1111,11 +1129,12 @@
                 class="card-img-top"
                 alt="Producto 5"
                 data-aos="zoom-in"
+                data-aos-duration="800"
               />
               <div class="card-body">
-                <h5 class="card-title">Estudios e investigaciones</h5>
+                <h5 class="card-title" data-aos="fade-right" data-aos-delay="600">Estudios e investigaciones</h5>
                 <ul class="card-text">
-                  <li>
+                  <li data-aos="fade-up" data-aos-delay="700">
                     Sobre la problemática socioeconómica y productiva del país
                     con enfoque en los objetivos de desarrollo sostenible
                   </li>
@@ -1135,11 +1154,12 @@
                 class="card-img-top"
                 alt="Producto 6"
                 data-aos="zoom-in"
+                data-aos-duration="800"
               />
               <div class="card-body">
-                <h5 class="card-title">Convenios y cooperación</h5>
+                <h5 class="card-title" data-aos="fade-right" data-aos-delay="700">Convenios y cooperación</h5>
                 <ul class="card-text">
-                  <li>
+                  <li data-aos="fade-up" data-aos-delay="800">
                     Suscribir mecanismos de cooperación y convenios con
                     instituciones públicas o privadas
                   </li>
@@ -1159,11 +1179,12 @@
                 class="card-img-top"
                 alt="Producto 7"
                 data-aos="zoom-in"
+                data-aos-duration="800"
               />
               <div class="card-body">
-                <h5 class="card-title">Voluntariado</h5>
+                <h5 class="card-title" data-aos="fade-right" data-aos-delay="800">Voluntariado</h5>
                 <ul class="card-text">
-                  <li>
+                  <li data-aos="fade-up" data-aos-delay="900">
                     Voluntariado de acción social y desarrollo para fortalecer
                     la productividad y competitividad de los sectores
                     productivos más vulnerables
@@ -1176,51 +1197,133 @@
       </div>
     </section>
 
-   <!-- Sección Contáctanos -->
+<!-- Sección Contáctanos -->
 <section id="contacto" class="py-5 bg-light">
   <div class="container">
-    <!-- Título de la sección con el mismo formato -->
+    <!-- Título de la sección con animación mejorada -->
     <div class="row mb-5">
       <div class="col-12 text-center">
-        <h2 class="fw-bold">Contáctanos</h2>
-        <div class="divider mx-auto"></div>
+        <h2 class="fw-bold" data-aos="fade-down" data-aos-duration="800">Contáctanos</h2>
+        <div class="divider mx-auto" data-aos="zoom-in" data-aos-delay="300"></div>
       </div>
     </div>
     <div class="row">
-      <!-- Ubicación y datos de contacto -->
-      <div class="col-md-12 fade-in">
-        <h4>Ubicación</h4>
-        <div class="mb-4">
-              <!-- Google Maps -->
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.527690945451!2d-78.48522117865166!3d-0.2951555034560274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5a34b110abec3%3A0xbd80700405c4ea2c!2sBulevar%20de%20las%20Acacias%203!5e0!3m2!1ses!2sec!4v1739894773874!5m2!1ses!2sec"
-                width="100%"
-                height="300"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-            <h4>Datos de contacto</h4>
-            <ul class="list-unstyled">
-              <li>
-                <i class="fas fa-phone"></i>
-                <p>+593 987002567</p>
-                <p>+593 997792509</p>
-              </li>
-              <li>
-                <i class="fas fa-envelope"></i>
-                <p>fadepsecuador@gmail.com</p>
-              </li>
-              <li>
-                <i class="fas fa-map-marker-alt"></i>
-                Abdón Calderón - Bulevar de las Acacias, 3-30, Conocoto, Quito, Pichincha.
-            </ul>
+      <!-- Mapa y datos de contacto -->
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+        <h4 data-aos="fade-up" data-aos-delay="200">Ubicación</h4>
+        <div class="mb-4" data-aos="zoom-in" data-aos-delay="300">
+          <!-- Google Maps -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.527690945451!2d-78.48522117865166!3d-0.2951555034560274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5a34b110abec3%3A0xbd80700405c4ea2c!2sBulevar%20de%20las%20Acacias%203!5e0!3m2!1ses!2sec!4v1739894773874!5m2!1ses!2sec"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <h4 data-aos="fade-up" data-aos-delay="400">Datos de contacto</h4>
+        <ul class="list-unstyled contact-info">
+          <li data-aos="fade-up" data-aos-delay="500">
+            <i class="fas fa-phone me-2 text-purple"></i>
+            <p class="d-inline-block mb-1">+593 987002567</p>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="550">
+            <i class="fas fa-phone me-2 text-purple"></i>
+            <p class="d-inline-block mb-1">+593 997792509</p>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="600">
+            <i class="fas fa-envelope me-2 text-purple"></i>
+            <p class="d-inline-block mb-1">fadepsecuador@gmail.com</p>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="650">
+            <i class="fas fa-map-marker-alt me-2 text-purple"></i>
+            <p class="d-inline-block mb-1">Abdón Calderón - Bulevar de las Acacias, 3-30, Conocoto, Quito, Pichincha.</p>
+          </li>
+        </ul>
+     
+        <div class="social-icons d-flex justify-content-center mt-5" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="600">
+          <a
+            href="https://facebook.com/tu-pagina"
+            class="nav-link text-white social-icon-link"
+            target="_blank"
+            aria-label="Facebook"
+            data-aos="zoom-in" 
+            data-aos-delay="650"
+          >
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a
+            href="https://instagram.com/tu-pagina"
+            class="nav-link text-white social-icon-link"
+            target="_blank"
+            aria-label="Instagram"
+            data-aos="zoom-in" 
+            data-aos-delay="700"
+          >
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a
+            href="mailto:fadepsecuador@gmail.com"
+            class="nav-link text-white social-icon-link"
+            target="_blank"
+            aria-label="Email"
+            data-aos="zoom-in" 
+            data-aos-delay="750"
+          >
+            <i class="fas fa-envelope fa-lg"></i>
+          </a>
+        </div>
+        
+      </div>
+
+      <!-- Formulario de contacto -->
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+        <div class="card shadow-lg border-0">
+          <div class="card-body p-4">
+            <h4 class="mb-4 " data-aos="fade-up" data-aos-delay="200">Envíanos un mensaje</h4>
+            <form id="contactForm" action="https://formspree.io/fadepsecuador@gmail.com" method="POST">
+              <div class="mb-3" data-aos="fade-up" data-aos-delay="300">
+                <label for="nombre" class="form-label text-purple">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+              </div>
+              <div class="mb-3" data-aos="fade-up" data-aos-delay="400">
+                <label for="email" class="form-label text-purple">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3" data-aos="fade-up" data-aos-delay="500">
+                <label for="telefono" class="form-label text-purple">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono">
+              </div>
+              <div class="mb-3" data-aos="fade-up" data-aos-delay="600">
+                <label for="asunto" class="form-label text-purple">Asunto</label>
+                <input type="text" class="form-control" id="asunto" name="asunto" required>
+              </div>
+              <div class="mb-4" data-aos="fade-up" data-aos-delay="700">
+                <label for="mensaje" class="form-label text-purple">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+              </div>
+              <!-- Botón de Enviar mensaje con el mismo estilo que el botón Conócenos -->
+<div class="d-grid" data-aos="fade-up" data-aos-delay="800">
+  <button 
+    type="submit" 
+    class="btn btn-lg px-4 py-2 submit-button" 
+    style="background-color: #7b53bb; color: white; border: none; box-shadow: 0 4px 6px rgba(109, 40, 217, 0.25); transition: all 0.3s ease; font-weight: 500; border-radius: 30px;" 
+    onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 6px 12px rgba(109, 40, 217, 0.3)';" 
+    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(109, 40, 217, 0.25)';"
+  >
+    Enviar mensaje <i class="fas fa-paper-plane ms-2"></i>
+  </button>
+</div>
+              <div class="form-message mt-3 text-center" style="display: none;"></div>
+            </form>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
 <!-- Sección Lo Último -->
 <section id="ultimo" class="py-5">

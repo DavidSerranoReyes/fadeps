@@ -37,6 +37,8 @@ AOS.init();
 document.addEventListener('DOMContentLoaded', function () {
   AOS.init({
     duration: 800,
+    once: false,
+    mirror: true,
   });
 });
 
@@ -212,4 +214,56 @@ document.addEventListener('DOMContentLoaded', function () {
       keyboard: true,
     }
   );
+});
+
+// Script para el manejo del formulario de contacto
+document.addEventListener('DOMContentLoaded', function () {
+  const contactForm = document.getElementById('contactForm');
+  const formMessage = document.querySelector('.form-message');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(contactForm);
+      const actionUrl = contactForm.getAttribute('action');
+
+      // Mostrar mensaje de carga
+      formMessage.innerHTML =
+        '<div class="alert alert-info">Enviando mensaje...</div>';
+      formMessage.style.display = 'block';
+
+      fetch(actionUrl, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+        .then((response) => {
+          if (response.ok) {
+            formMessage.innerHTML =
+              '<div class="alert alert-success">¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.</div>';
+            contactForm.reset();
+          } else {
+            throw new Error('Hubo un error al enviar el formulario.');
+          }
+        })
+        .catch((error) => {
+          formMessage.innerHTML =
+            '<div class="alert alert-danger">Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.</div>';
+        });
+    });
+  }
+
+  // Animación adicional para los elementos al hacer scroll (complementa AOS)
+  const animateElements = document.querySelectorAll(
+    '.contact-info li, .social-icons a'
+  );
+
+  animateElements.forEach((element) => {
+    element.addEventListener('mouseenter', function () {
+      this.style.opacity = '1';
+    });
+  });
 });

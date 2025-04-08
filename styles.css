@@ -81,7 +81,7 @@ body {
 /* Header y logo */
 .header-background {
   background-color: white;
-  min-height: 90vh;
+  min-height: 100vh;
   background-image: url('assets/logobandera.webp'),
     linear-gradient(to right, rgba(31, 102, 160, 0.5), rgba(200, 200, 200, 0)),
     linear-gradient(to right, rgba(117, 177, 196, 0.5), rgba(150, 150, 150, 0)),
@@ -721,8 +721,24 @@ footer a:hover {
   }
 
   .divider {
+    height: 3px;
+    width: 80px;
+    background: #7b53bb; /* El mismo color morado que usas en el botón */
+    margin-top: 15px;
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  /* Opcional: para darle un efecto más elegante */
+  .divider::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
     width: 40px;
-    margin: 10px auto 15px;
+    background: #7b53bb;
+    top: -8px;
   }
 
   #newsCarousel .carousel-control-prev,
@@ -758,4 +774,105 @@ footer a:hover {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px; /* Considera la altura de la navbar fija */
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+  --primary-color: #7c4dff; /* Color morado principal */
+  --primary-color-dark: #5e35b1; /* Variante oscura del color principal */
+  --primary-color-rgb: 124, 77, 255; /* Valores RGB del color principal */
+}
+
+/* Texto y elementos en color morado */
+.text-purple {
+  color: var(--primary-color);
+}
+
+/* Estilos para la lista de información de contacto */
+.contact-info li {
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.contact-info li:hover {
+  transform: translateX(5px);
+}
+
+/* Estilos para íconos de redes sociales */
+.social-icons a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: var(--primary-color-dark);
+}
+
+/* Estilos para el botón de enviar (alternativa a los atributos inline) */
+.submit-button {
+  background-color: #7b53bb !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 4px 6px rgba(109, 40, 217, 0.25) !important;
+  transition: all 0.3s ease !important;
+  font-weight: 500 !important;
+  border-radius: 30px !important;
+}
+
+.submit-button:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 12px rgba(109, 40, 217, 0.3) !important;
+}
+
+/* Animación adicional para el ícono de papel avión */
+.submit-button i {
+  transition: transform 0.3s ease;
+}
+
+.submit-button:hover i {
+  transform: translateX(5px);
+}
+
+/* Efecto de click */
+.submit-button:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 4px rgba(109, 40, 217, 0.2) !important;
+}
+
+/* Estilos para los campos del formulario */
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(var(--primary-color-rgb), 0.25);
+}
+
+/* Animación para el botón al hacer focus */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(var(--primary-color-rgb), 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(var(--primary-color-rgb), 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--primary-color-rgb), 0);
+  }
+}
+
+.btn-purple:focus {
+  animation: pulse 1.5s infinite;
+}
+
+/* Estilos para las tarjetas */
+.card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
