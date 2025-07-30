@@ -876,3 +876,189 @@ html {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
+/* Estilos para la galería simple de eventos */
+.event-poster-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  background: white;
+  margin-bottom: 30px;
+  height: 320px;
+}
+
+.event-poster-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.event-poster-link {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 100%;
+}
+
+.event-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+  display: block;
+  background-color: #f8f9fa;
+}
+
+.event-poster-card:hover .event-poster {
+  transform: scale(1.02);
+}
+
+.event-poster-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.3) 60%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.event-poster-card:hover .event-poster-overlay {
+  opacity: 1;
+}
+
+.event-poster-content {
+  color: white;
+  text-align: center;
+  transform: translateY(10px);
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+.event-poster-card:hover .event-poster-content {
+  transform: translateY(0);
+}
+
+.event-poster-content h5 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  line-height: 1.2;
+}
+
+.event-poster-content p {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  opacity: 1;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.event-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.event-whatsapp-btn:hover {
+  background-color: #07b975;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+  color: white;
+  text-decoration: none;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.event-whatsapp-btn i {
+  font-size: 1rem;
+}
+
+/* Responsive para la galería de eventos */
+@media (max-width: 991.98px) {
+  .event-poster-card {
+    height: 280px;
+  }
+
+  .event-poster-content h5 {
+    font-size: 1rem;
+  }
+
+  .event-whatsapp-btn {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .event-poster-card {
+    height: 250px;
+  }
+
+  .event-poster-overlay {
+    padding: 15px;
+  }
+
+  .event-poster-content h5 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+
+  .event-poster-content p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .event-whatsapp-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .event-poster-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .event-poster-card {
+    height: 220px;
+  }
+
+  .event-poster-content h5 {
+    font-size: 0.95rem;
+  }
+
+  .event-poster-content p {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+
+  .event-whatsapp-btn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+}
