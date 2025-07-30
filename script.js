@@ -120,16 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
       link: 'https://www.youtube.com/watch?v=BL10m90XeCk',
     },
     {
-      title:
-        'Sobre la Cumbre de Sostenibilidad 2025: Uniendo Fuerzas para un Futuro Sostenible',
-      description:
-        'Reuniremos en el Centro de Convenciones de Quito a líderes, empresas, ONGs y organizaciones de todo el mundo para un evento transformador que trasciende las palabras y se centra en la acción.',
-      imageUrl:
-        'https://ekoscumbresostenibilidad.com/images/2025/01/28/cumbres-sostenibilidad-2025.jpg',
-      imageAlt: 'Cumbre de Sostenibilidad 2025',
-      link: 'https://ekoscumbresostenibilidad.com/',
-    },
-    {
       title: 'EL MUSEO MÁS FUTURISTA Y ESPECTACULAR DEL MUNDO',
       description:
         'Bienvenidos al cuarto y último video de nuestra fascinante saga China Learning Tour. En esta entrega final, vamos a sumergirnos en la China del Futuro como nunca antes lo habías imaginado.',
