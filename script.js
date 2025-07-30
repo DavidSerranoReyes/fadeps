@@ -139,13 +139,21 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     {
       title:
-        '¿Cómo logró Ecuador ser pionero mundial de producción sin deforestación?',
+        'De MercadoLibre a América Móvil: el listado del BofA para invertir en América Latina',
       description:
-        'Un programa iniciado en 2017 dio sus frutos y logró que Ecuador sea pionero mundial de producción sin deforestación y con prácticas sostenibles, según el PNUD.',
+        'Bank of America actualizó su portafolio en América Latina con un enfoque en consumo, banca y tecnología. La firma mantuvo su visión neutral sobre Brasil y México.',
       imageUrl:
-        'https://www.lahora.com.ec/wp-content/uploads/2025/03/468094070_977017674455375_8809820703951748435_n.jpg',
-      imageAlt: 'Ecuador sin deforestación',
-      link: 'https://www.lahora.com.ec/pais/como-logro-ecuador-ser-pionero-mundial-de-produccion-sin-deforestacion/',
+        'https://www.bloomberglinea.com/resizer/v2/JUHLMZACXVEENMGWDQNFLTPOR4.jpg?auth=038d091e40be3cf8ab7efc62f7be7d1acdaa25b207923991b82c0c10b94fe671&width=1200&height=630&quality=80&smart=true',
+      imageAlt: 'Bank of America inversiones América Latina',
+      link: 'https://www.bloomberglinea.com/mercados/de-mercadolibre-a-america-movil-el-listado-del-bofa-para-invertir-en-america-latina/',
+    },
+    {
+      title: 'El incinerador de basura más asombroso del mundo',
+      description:
+        'Presentado por Alex Marquez, descubre esta increíble tecnología de gestión de residuos que está revolucionando el tratamiento de basura a nivel mundial. Un análisis detallado de una de las soluciones más innovadoras para el problema de los desechos.',
+      imageUrl: 'https://img.youtube.com/vi/Zx10473doTY/maxresdefault.jpg',
+      imageAlt: 'Incinerador de basura innovador - Alex Marquez',
+      link: 'https://youtu.be/Zx10473doTY?si=8Okw70ybKoBw3x0E',
     },
   ];
 
