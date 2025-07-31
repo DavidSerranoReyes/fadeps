@@ -145,6 +145,88 @@ document.addEventListener('DOMContentLoaded', function () {
       imageAlt: 'Incinerador de basura innovador - Alex Marquez',
       link: 'https://youtu.be/Zx10473doTY?si=8Okw70ybKoBw3x0E',
     },
+    {
+      title:
+        'Puerto Madero tiene boom de inversores extranjeros en busca de propiedades con precios de oportunidad',
+      description:
+        'Inversores extranjeros impulsan la demanda inmobiliaria en Puerto Madero, atraídos por precios considerados de oportunidad en dólares.',
+      imageUrl:
+        'https://img.cronista.com/files/image/299/299794/5ffe0f27da89c-screen-and-max-width480px_950_534!.jpg?s=b9eadbe0c0902625a701a0fd2796ba97&d=1752839158',
+      link: 'https://www.cronista.com/negocios/puerto-madero-tiene-boom-de-inversores-extranjeros-en-busca-de-propiedades-con-precios-de-oportunidad/',
+    },
+    {
+      title:
+        'Antes de la aprobación del desembolso, el FMI mantuvo sus proyecciones para la Argentina y estima un crecimiento de 5,5% este año',
+      description:
+        'El FMI sostuvo sus proyecciones de crecimiento para Argentina antes del desembolso, estimando un 5,5% para este año según su último informe.',
+      imageUrl:
+        'https://www.infobae.com/resizer/v2/CX4ISVMDAZHZFEWFQTO7ZMG24I.jpg?auth=903d5e0c6e913abb5f8cd6a108377112edafd44bb7763c061b7da9263ff5113f&smart=true&width=350&height=233&quality=85',
+      imageAlt: 'Proyecciones del FMI para Argentina',
+      link: 'https://www.infobae.com/economia/2025/07/29/antes-de-la-aprobacion-del-desembolso-el-fmi-mantuvo-sus-proyecciones-para-la-argentina-y-estima-un-crecimiento-de-55-este-ano/',
+    },
+    {
+      title:
+        'Brasil puso en marcha la mayor central termica de gas natural de América Latina',
+      description:
+        'La usina termoeléctrica tiene capacidad para abastecer de energía a más de ocho millones de hogares, marcando un hito en la infraestructura energética de la región.',
+      imageUrl:
+        'https://media.ambito.com/p/9da930f03b3b118c0a135b977effa64a/adjuntos/239/imagenes/042/625/0042625393/655x368/smart/usina-termoelectrica-gna-ii-brasil.png',
+      imageAlt:
+        'La usina termoeléctrica tiene capacidad para abastecer de energía a más de ocho millones de hogares.',
+      link: 'https://www.ambito.com/energia/brasil-puso-marcha-la-mayor-central-termica-gas-natural-america-latina-n6172216',
+    },
+    {
+      title: 'Canadá empieza a pensar en el Mercosur',
+      description:
+        'El gobierno canadiense está evaluando nuevas estrategias comerciales y diplomáticas para fortalecer sus relaciones con los países del bloque regional, buscando oportunidades de inversión y cooperación económica.',
+      imageUrl:
+        'https://www.infobae.com/resizer/v2/DDXIMUDNB5G3ZLDU5WPPNOEQDU.png?auth=39c5f222246dc848596cc0448bf2f8a0e84f91600e7501e2f01847d33646aee2&smart=true&width=350&height=236&quality=85',
+      imageAlt: 'Canadá está cada vez más',
+      link: 'https://www.infobae.com/revista-chacra/2025/07/30/canada-empieza-a-pensar-en-el-mercosur/',
+    },
+    {
+      title:
+        'Argentina acumula dólares y Caputo ve acceso al mercado internacional en el horizonte - Alex Márquez',
+      description:
+        'El ministro de Economía Luis Caputo proyecta una recuperación económica con la acumulación de reservas en dólares, abriendo la puerta a un futuro acceso a los mercados internacionales para Argentina.',
+      imageUrl:
+        'https://www.bloomberglinea.com/resizer/v2/RIOX6ZXAK5ADRP6JNQOJ2TBYRA.jpg?auth=a06838b8fb934a0f36feefc9c88a73f18600c6541cafd4c37c8f3fad1c664cba&width=800&height=533&quality=80&smart=true',
+      imageAlt:
+        "Milei's Austerity Plan Pushes Argentina Into Recession In First Quarter",
+      link: 'https://www.bloomberglinea.com/latinoamerica/argentina/argentina-acumula-dolares-y-caputo-ve-acceso-al-mercado-internacional-en-el-horizonte/',
+    },
+    {
+      title:
+        'El mercado de peras en América Latina crecerá hasta los 1.200 millones de dólares en 2035 - Alex Márquez',
+      description:
+        'El sector frutícola latinoamericano proyecta un crecimiento significativo del mercado de peras, alcanzando los 1.200 millones de dólares para 2035, impulsado por la demanda internacional y mejoras en la producción.',
+      imageUrl:
+        'https://media.lmneuquen.com/p/0dcb4d3e0d56efca15d377a476b85596/adjuntos/353/imagenes/007/974/0007974038/730x0/smart/peras-empaque-1.jpeg',
+      imageAlt:
+        'Promisorio futuro para el mercado de la pera en Amétrica Latina.',
+      link: 'https://masp.lmneuquen.com/fruticultura/el-mercado-peras-america-latina-crecera-los-1200-millones-dolares-2035-n1201917',
+    },
+    {
+      title:
+        'Noticias de la ONU: Actualización global de eventos y desarrollo internacional',
+      description:
+        'Las Naciones Unidas presentan su informe semanal sobre los desarrollos globales, incluyendo iniciativas de paz, ayuda humanitaria y cooperación internacional en diversas regiones del mundo.',
+      imageUrl:
+        'https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/11-07-2025-UNDP-Peru-agrobiodiversity-06.jpg/image1170x530cropped.jpg',
+      imageAlt:
+        'Las fluctuaciones extremas en las precipitaciones como consecuencia de la crisis climática han afectado significativamente a la agricultura y a los medios de vida de las comunidades del sureste de Perú.',
+      link: 'https://news.un.org/es/story/2025/07/1540254',
+    },
+    {
+      title:
+        'México invertirá 1.700 millones de dólares para modernizar 62 aeropuertos',
+      description:
+        'La Secretaría de Infraestructura, Comunicaciones y Transportes anuncia una inversión histórica para la modernización de la infraestructura aeroportuaria del país, mejorando la conectividad y seguridad.',
+      imageUrl:
+        'https://mexico-now.com/wp-content/uploads/2025/07/airport-at-the-colorful-sunset-2022-02-02-05-06-41-utc-scaled-e1671720802460.jpeg',
+      imageAlt: 'SICT will invest US$1.7 billion to modernize 62 airports',
+      link: 'https://mexico-now.com/sict-will-invest-us1-7-billion-to-modernize-62-airports/',
+    },
   ];
 
   // Get the container for the carousel
