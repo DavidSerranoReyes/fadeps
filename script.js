@@ -227,6 +227,55 @@ document.addEventListener('DOMContentLoaded', function () {
       imageAlt: 'SICT will invest US$1.7 billion to modernize 62 airports',
       link: 'https://mexico-now.com/sict-will-invest-us1-7-billion-to-modernize-62-airports/',
     },
+    {
+      title: 'Aguacate Hass: el quinto producto más exportado del agro',
+      description:
+        'El aguacate Hass se consolida como uno de los productos estrella de las exportaciones agrícolas peruanas, ocupando el quinto lugar en el ranking de productos más exportados del sector agropecuario.',
+      imageUrl:
+        'https://www.valoraanalitik.com/wp-content/uploads/2025/07/aguacate-hass-agro-1024x597.jpg',
+      imageAlt: 'Aguacate Hass exportaciones',
+      link: 'https://www.valoraanalitik.com/aguacate-hass-el-quinto-producto-mas-exportado-del-agro/',
+    },
+    {
+      title:
+        'Transporte marítimo: nuevos desafíos y oportunidades para el comercio',
+      description:
+        'El sector transporte marítimo enfrenta transformaciones significativas que impactan el comercio internacional, con nuevos desafíos logísticos y oportunidades de optimización en las rutas comerciales.',
+      imageUrl:
+        'https://cdn.portalfruticola.com/2025/07/transporte-maritmo-vista-aerea-puerto-1024x538.jpg',
+      imageAlt: 'Transporte marítimo contenedores',
+      link: 'https://www.portalfruticola.com/noticias/2025/08/01/transporte-maritimo/',
+    },
+    {
+      title:
+        'Estos son los 20 proyectos que prometen transformar el Perú como nunca antes',
+      description:
+        'Un ambicioso plan de infraestructura y desarrollo económico busca posicionar al Perú como una potencia regional con proyectos que transformarán la economía y la calidad de vida de los peruanos.',
+      imageUrl:
+        'https://elcomercio.pe/resizer/v2/IJKYZDHFPRDUTLMJPLQZJKIFNQ.jpg?auth=9a462d43e3836b20f2a10a87f48715fd98b36a0f86c3bc7aa08fbc5876c56ad9&width=640&height=360&quality=75&smart=true',
+      imageAlt: 'Proyectos transformadores del Perú',
+      link: 'https://elcomercio.pe/respuestas/cual/impresionante-estos-son-los-20-proyectos-que-prometen-transformar-el-peru-como-nunca-antes-tdpe-noticia/',
+    },
+    {
+      title:
+        'El único país de Sudamérica donde opera Walmart, cadena de supermercados estadounidense',
+      description:
+        'Walmart mantiene su presencia en Sudamérica y Perú se consolida como el único país de la región donde opera esta importante cadena de supermercados estadounidense, tras su salida de Argentina y Brasil.',
+      imageUrl:
+        'https://www.infobae.com/resizer/v2/7M76HOH4KVFKXGWTLX5RJVMLJY.jpg?auth=ba0634889eccd356c677cb8138906f6ca8ccc65e8297baccf331f68bfb812246&smart=true&width=350&height=197&quality=85',
+      imageAlt: 'Walmart supermercado Perú',
+      link: 'https://www.infobae.com/peru/2025/08/02/el-unico-pais-de-sudamerica-donde-opera-walmart-cadena-de-supermercados-estadounidense-se-fue-de-argentina-y-brasil/',
+    },
+    {
+      title:
+        'Así se movió el riesgo país en América Latina entre enero y julio de 2025',
+      description:
+        'El riesgo país en América Latina ha mostrado variaciones significativas durante el primer semestre de 2025, reflejando la volatilidad económica y las perspectivas de inversión en la región.',
+      imageUrl:
+        'https://www.bloomberglinea.com/resizer/v2/5J7OFQQ2NRGWDLT2RRZO26TV2U.jpg?auth=8d946c7f73940d2803ef0378ddbad3fcbedcebee6bb1132ed6f59e4904211fca&width=800&height=533&quality=80&smart=true',
+      imageAlt: 'Riesgo país América Latina 2025',
+      link: 'https://www.bloomberglinea.com/mercados/asi-se-movio-el-riesgo-pais-en-america-latina-entre-enero-y-julio-de-2025/',
+    },
   ];
 
   // Get the container for the carousel
