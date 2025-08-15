@@ -109,240 +109,188 @@ titulo.addEventListener('mouseout', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Define the news items
-  const newsItems = [
-    {
-      title: 'EL PAÍS DONDE LA MENTE HUMANA ES VALORADA PREMIADA Y CELEBRADA',
-      description:
-        '¿Están listos para un viaje que sacudirá sus neuronas de pura inspiración? ¡Bienvenidos a "El país donde la mente humana es valorada, premiada y celebrada" y no, no es un cuento de hadas, es Suecia, la tierra de las ideas revolucionarias!',
-      imageUrl: 'https://img.youtube.com/vi/BL10m90XeCk/maxresdefault.jpg',
-      imageAlt: 'País donde la mente humana es valorada',
-      link: 'https://www.youtube.com/watch?v=BL10m90XeCk',
-    },
-    {
-      title: 'EL MUSEO MÁS FUTURISTA Y ESPECTACULAR DEL MUNDO',
-      description:
-        'Bienvenidos al cuarto y último video de nuestra fascinante saga China Learning Tour. En esta entrega final, vamos a sumergirnos en la China del Futuro como nunca antes lo habías imaginado.',
-      imageUrl: 'https://img.youtube.com/vi/6x3gkUe7O4I/hqdefault.jpg',
-      imageAlt: 'Museo futurista',
-      link: 'https://www.youtube.com/watch?v=6x3gkUe7O4I',
-    },
-    {
-      title:
-        'De MercadoLibre a América Móvil: el listado del BofA para invertir en América Latina',
-      description:
-        'Bank of America actualizó su portafolio en América Latina con un enfoque en consumo, banca y tecnología. La firma mantuvo su visión neutral sobre Brasil y México.',
-      imageUrl:
-        'https://www.bloomberglinea.com/resizer/v2/JUHLMZACXVEENMGWDQNFLTPOR4.jpg?auth=038d091e40be3cf8ab7efc62f7be7d1acdaa25b207923991b82c0c10b94fe671&width=1200&height=630&quality=80&smart=true',
-      imageAlt: 'Bank of America inversiones América Latina',
-      link: 'https://www.bloomberglinea.com/mercados/de-mercadolibre-a-america-movil-el-listado-del-bofa-para-invertir-en-america-latina/',
-    },
-    {
-      title: 'El incinerador de basura más asombroso del mundo',
-      description:
-        'Presentado por Alex Marquez, descubre esta increíble tecnología de gestión de residuos que está revolucionando el tratamiento de basura a nivel mundial. Un análisis detallado de una de las soluciones más innovadoras para el problema de los desechos.',
-      imageUrl: 'https://img.youtube.com/vi/Zx10473doTY/maxresdefault.jpg',
-      imageAlt: 'Incinerador de basura innovador - Alex Marquez',
-      link: 'https://youtu.be/Zx10473doTY?si=8Okw70ybKoBw3x0E',
-    },
-    {
-      title:
-        'Puerto Madero tiene boom de inversores extranjeros en busca de propiedades con precios de oportunidad',
-      description:
-        'Inversores extranjeros impulsan la demanda inmobiliaria en Puerto Madero, atraídos por precios considerados de oportunidad en dólares.',
-      imageUrl:
-        'https://img.cronista.com/files/image/299/299794/5ffe0f27da89c-screen-and-max-width480px_950_534!.jpg?s=b9eadbe0c0902625a701a0fd2796ba97&d=1752839158',
-      link: 'https://www.cronista.com/negocios/puerto-madero-tiene-boom-de-inversores-extranjeros-en-busca-de-propiedades-con-precios-de-oportunidad/',
-    },
-    {
-      title:
-        'Antes de la aprobación del desembolso, el FMI mantuvo sus proyecciones para la Argentina y estima un crecimiento de 5,5% este año',
-      description:
-        'El FMI sostuvo sus proyecciones de crecimiento para Argentina antes del desembolso, estimando un 5,5% para este año según su último informe.',
-      imageUrl:
-        'https://www.infobae.com/resizer/v2/CX4ISVMDAZHZFEWFQTO7ZMG24I.jpg?auth=903d5e0c6e913abb5f8cd6a108377112edafd44bb7763c061b7da9263ff5113f&smart=true&width=350&height=233&quality=85',
-      imageAlt: 'Proyecciones del FMI para Argentina',
-      link: 'https://www.infobae.com/economia/2025/07/29/antes-de-la-aprobacion-del-desembolso-el-fmi-mantuvo-sus-proyecciones-para-la-argentina-y-estima-un-crecimiento-de-55-este-ano/',
-    },
-    {
-      title:
-        'Brasil puso en marcha la mayor central termica de gas natural de América Latina',
-      description:
-        'La usina termoeléctrica tiene capacidad para abastecer de energía a más de ocho millones de hogares, marcando un hito en la infraestructura energética de la región.',
-      imageUrl:
-        'https://media.ambito.com/p/9da930f03b3b118c0a135b977effa64a/adjuntos/239/imagenes/042/625/0042625393/655x368/smart/usina-termoelectrica-gna-ii-brasil.png',
-      imageAlt:
-        'La usina termoeléctrica tiene capacidad para abastecer de energía a más de ocho millones de hogares.',
-      link: 'https://www.ambito.com/energia/brasil-puso-marcha-la-mayor-central-termica-gas-natural-america-latina-n6172216',
-    },
-    {
-      title: 'Canadá empieza a pensar en el Mercosur',
-      description:
-        'El gobierno canadiense está evaluando nuevas estrategias comerciales y diplomáticas para fortalecer sus relaciones con los países del bloque regional, buscando oportunidades de inversión y cooperación económica.',
-      imageUrl:
-        'https://www.infobae.com/resizer/v2/DDXIMUDNB5G3ZLDU5WPPNOEQDU.png?auth=39c5f222246dc848596cc0448bf2f8a0e84f91600e7501e2f01847d33646aee2&smart=true&width=350&height=236&quality=85',
-      imageAlt: 'Canadá está cada vez más',
-      link: 'https://www.infobae.com/revista-chacra/2025/07/30/canada-empieza-a-pensar-en-el-mercosur/',
-    },
-    {
-      title:
-        'Argentina acumula dólares y Caputo ve acceso al mercado internacional en el horizonte - Alex Márquez',
-      description:
-        'El ministro de Economía Luis Caputo proyecta una recuperación económica con la acumulación de reservas en dólares, abriendo la puerta a un futuro acceso a los mercados internacionales para Argentina.',
-      imageUrl:
-        'https://www.bloomberglinea.com/resizer/v2/RIOX6ZXAK5ADRP6JNQOJ2TBYRA.jpg?auth=a06838b8fb934a0f36feefc9c88a73f18600c6541cafd4c37c8f3fad1c664cba&width=800&height=533&quality=80&smart=true',
-      imageAlt:
-        "Milei's Austerity Plan Pushes Argentina Into Recession In First Quarter",
-      link: 'https://www.bloomberglinea.com/latinoamerica/argentina/argentina-acumula-dolares-y-caputo-ve-acceso-al-mercado-internacional-en-el-horizonte/',
-    },
-    {
-      title:
-        'El mercado de peras en América Latina crecerá hasta los 1.200 millones de dólares en 2035 - Alex Márquez',
-      description:
-        'El sector frutícola latinoamericano proyecta un crecimiento significativo del mercado de peras, alcanzando los 1.200 millones de dólares para 2035, impulsado por la demanda internacional y mejoras en la producción.',
-      imageUrl:
-        'https://media.lmneuquen.com/p/0dcb4d3e0d56efca15d377a476b85596/adjuntos/353/imagenes/007/974/0007974038/730x0/smart/peras-empaque-1.jpeg',
-      imageAlt:
-        'Promisorio futuro para el mercado de la pera en Amétrica Latina.',
-      link: 'https://masp.lmneuquen.com/fruticultura/el-mercado-peras-america-latina-crecera-los-1200-millones-dolares-2035-n1201917',
-    },
-    {
-      title:
-        'Noticias de la ONU: Actualización global de eventos y desarrollo internacional',
-      description:
-        'Las Naciones Unidas presentan su informe semanal sobre los desarrollos globales, incluyendo iniciativas de paz, ayuda humanitaria y cooperación internacional en diversas regiones del mundo.',
-      imageUrl:
-        'https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/11-07-2025-UNDP-Peru-agrobiodiversity-06.jpg/image1170x530cropped.jpg',
-      imageAlt:
-        'Las fluctuaciones extremas en las precipitaciones como consecuencia de la crisis climática han afectado significativamente a la agricultura y a los medios de vida de las comunidades del sureste de Perú.',
-      link: 'https://news.un.org/es/story/2025/07/1540254',
-    },
-    {
-      title:
-        'México invertirá 1.700 millones de dólares para modernizar 62 aeropuertos',
-      description:
-        'La Secretaría de Infraestructura, Comunicaciones y Transportes anuncia una inversión histórica para la modernización de la infraestructura aeroportuaria del país, mejorando la conectividad y seguridad.',
-      imageUrl:
-        'https://mexico-now.com/wp-content/uploads/2025/07/airport-at-the-colorful-sunset-2022-02-02-05-06-41-utc-scaled-e1671720802460.jpeg',
-      imageAlt: 'SICT will invest US$1.7 billion to modernize 62 airports',
-      link: 'https://mexico-now.com/sict-will-invest-us1-7-billion-to-modernize-62-airports/',
-    },
-    {
-      title: 'Aguacate Hass: el quinto producto más exportado del agro',
-      description:
-        'El aguacate Hass se consolida como uno de los productos estrella de las exportaciones agrícolas peruanas, ocupando el quinto lugar en el ranking de productos más exportados del sector agropecuario.',
-      imageUrl:
-        'https://www.valoraanalitik.com/wp-content/uploads/2025/07/aguacate-hass-agro-1024x597.jpg',
-      imageAlt: 'Aguacate Hass exportaciones',
-      link: 'https://www.valoraanalitik.com/aguacate-hass-el-quinto-producto-mas-exportado-del-agro/',
-    },
-    {
-      title:
-        'Transporte marítimo: nuevos desafíos y oportunidades para el comercio',
-      description:
-        'El sector transporte marítimo enfrenta transformaciones significativas que impactan el comercio internacional, con nuevos desafíos logísticos y oportunidades de optimización en las rutas comerciales.',
-      imageUrl:
-        'https://cdn.portalfruticola.com/2025/07/transporte-maritmo-vista-aerea-puerto-1024x538.jpg',
-      imageAlt: 'Transporte marítimo contenedores',
-      link: 'https://www.portalfruticola.com/noticias/2025/08/01/transporte-maritimo/',
-    },
-    {
-      title:
-        'Estos son los 20 proyectos que prometen transformar el Perú como nunca antes',
-      description:
-        'Un ambicioso plan de infraestructura y desarrollo económico busca posicionar al Perú como una potencia regional con proyectos que transformarán la economía y la calidad de vida de los peruanos.',
-      imageUrl:
-        'https://elcomercio.pe/resizer/v2/IJKYZDHFPRDUTLMJPLQZJKIFNQ.jpg?auth=9a462d43e3836b20f2a10a87f48715fd98b36a0f86c3bc7aa08fbc5876c56ad9&width=640&height=360&quality=75&smart=true',
-      imageAlt: 'Proyectos transformadores del Perú',
-      link: 'https://elcomercio.pe/respuestas/cual/impresionante-estos-son-los-20-proyectos-que-prometen-transformar-el-peru-como-nunca-antes-tdpe-noticia/',
-    },
-    {
-      title:
-        'El único país de Sudamérica donde opera Walmart, cadena de supermercados estadounidense',
-      description:
-        'Walmart mantiene su presencia en Sudamérica y Perú se consolida como el único país de la región donde opera esta importante cadena de supermercados estadounidense, tras su salida de Argentina y Brasil.',
-      imageUrl:
-        'https://www.infobae.com/resizer/v2/7M76HOH4KVFKXGWTLX5RJVMLJY.jpg?auth=ba0634889eccd356c677cb8138906f6ca8ccc65e8297baccf331f68bfb812246&smart=true&width=350&height=197&quality=85',
-      imageAlt: 'Walmart supermercado Perú',
-      link: 'https://www.infobae.com/peru/2025/08/02/el-unico-pais-de-sudamerica-donde-opera-walmart-cadena-de-supermercados-estadounidense-se-fue-de-argentina-y-brasil/',
-    },
-    {
-      title:
-        'Así se movió el riesgo país en América Latina entre enero y julio de 2025',
-      description:
-        'El riesgo país en América Latina ha mostrado variaciones significativas durante el primer semestre de 2025, reflejando la volatilidad económica y las perspectivas de inversión en la región.',
-      imageUrl:
-        'https://www.bloomberglinea.com/resizer/v2/5J7OFQQ2NRGWDLT2RRZO26TV2U.jpg?auth=8d946c7f73940d2803ef0378ddbad3fcbedcebee6bb1132ed6f59e4904211fca&width=800&height=533&quality=80&smart=true',
-      imageAlt: 'Riesgo país América Latina 2025',
-      link: 'https://www.bloomberglinea.com/mercados/asi-se-movio-el-riesgo-pais-en-america-latina-entre-enero-y-julio-de-2025/',
-    },
-  ];
-
-  // Get the container for the carousel
   const carouselContainer = document.getElementById('newsCarouselContainer');
+  if (!carouselContainer) return;
 
-  // Create the carousel structure
-  let carouselHTML = `
-    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-      <div class="carousel-indicators">
-        ${newsItems
-          .map(
-            (item, index) => `
-          <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="${index}" 
-            ${index === 0 ? 'class="active" aria-current="true"' : ''} 
-            aria-label="Noticia ${index + 1}"></button>
-        `
-          )
-          .join('')}
-      </div>
-      
-      <div class="carousel-inner">
-        ${newsItems
-          .map(
-            (item, index) => `
-          <div class="carousel-item ${index === 0 ? 'active' : ''}">
-            <div class="row g-0 align-items-center">
-              <div class="col-md-4">
-                <img src="${item.imageUrl}" alt="${item.imageAlt}" class="img-fluid rounded-start" 
-                  ${index === 0 ? 'loading="eager"' : 'loading="lazy"'} width="640" height="360">
-              </div>
-              <div class="col-md-8">
-                <div class="p-4">
-                  <h3 class="card-title h5">${item.title}</h3>
-                  <p class="card-text">${item.description}</p>
-                  <a href="${item.link}" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">Ver más</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        `
-          )
-          .join('')}
-      </div>
+  // Carga los items desde un archivo JSON (assets/news.json)
+  fetch('assets/news.json')
+    .then((res) => res.json())
+    .then((newsItems) => {
+      if (!Array.isArray(newsItems) || newsItems.length === 0) return;
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
-    </div>
-  `;
+      // Construir el carrusel usando DOM (menor reflow y más seguro que innerHTML masivo)
+      const carousel = document.createElement('div');
+      carousel.id = 'newsCarousel';
+      carousel.className = 'carousel slide';
+      carousel.setAttribute('data-bs-ride', 'carousel');
+      carousel.setAttribute('data-bs-interval', '4000');
 
-  // Insert the carousel into the container
-  carouselContainer.innerHTML = carouselHTML;
+      const indicators = document.createElement('div');
+      indicators.className = 'carousel-indicators';
 
-  // Initialize the Bootstrap carousel
-  const carousel = new bootstrap.Carousel(
-    document.getElementById('newsCarousel'),
-    {
-      interval: 4000,
-      wrap: true,
-      keyboard: true,
-    }
-  );
+      const inner = document.createElement('div');
+      inner.className = 'carousel-inner';
+
+      // Crear fragmentos para menos repintados
+      const indicatorsFrag = document.createDocumentFragment();
+      const innerFrag = document.createDocumentFragment();
+
+      newsItems.forEach((item, index) => {
+        // Indicador
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.setAttribute('data-bs-target', '#newsCarousel');
+        button.setAttribute('data-bs-slide-to', String(index));
+        button.setAttribute('aria-label', `Noticia ${index + 1}`);
+        if (index === 0) {
+          button.className = 'active';
+          button.setAttribute('aria-current', 'true');
+        }
+        indicatorsFrag.appendChild(button);
+
+        // Item del carrusel
+        const carouselItem = document.createElement('div');
+        carouselItem.className = `carousel-item${index === 0 ? ' active' : ''}`;
+
+        const row = document.createElement('div');
+        row.className = 'row g-0 align-items-center';
+
+        const colImg = document.createElement('div');
+        colImg.className = 'col-md-4';
+
+        // Placeholder SVG data URI para imágenes faltantes o como placeholder para lazy-load
+        const placeholderSvg = `<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360'><rect fill='#e9ecef' width='100%' height='100%'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='#6c757d' font-size='20'>Imagen no disponible</text></svg>`;
+        const placeholderDataUri =
+          'data:image/svg+xml;base64,' + btoa(placeholderSvg);
+
+        const img = document.createElement('img');
+        img.className = 'img-fluid rounded-start';
+        img.alt = item.imageAlt || '';
+        img.width = 640;
+        img.height = 360;
+
+        // Para optimizar: solo la primera imagen se carga eager; el resto usan data-src y loading=lazy
+        if (index === 0) {
+          img.src = item.imageUrl || placeholderDataUri;
+          img.setAttribute('loading', 'eager');
+        } else {
+          // Usar placeholder como src inicial para evitar layout shift
+          img.src = placeholderDataUri;
+          if (item.imageUrl) {
+            // Guardar la URL real en data-src para cargar bajo demanda
+            img.dataset.src = item.imageUrl;
+          }
+          img.setAttribute('loading', 'lazy');
+        }
+
+        colImg.appendChild(img);
+
+        const colContent = document.createElement('div');
+        colContent.className = 'col-md-8';
+
+        const contentDiv = document.createElement('div');
+        contentDiv.className = 'p-4';
+
+        const h3 = document.createElement('h3');
+        h3.className = 'card-title h5';
+        h3.textContent = item.title || '';
+
+        const p = document.createElement('p');
+        p.className = 'card-text';
+        p.textContent = item.description || '';
+
+        const a = document.createElement('a');
+        a.className = 'btn btn-outline-primary btn-sm';
+        a.href = item.link || '#';
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.textContent = 'Ver más';
+
+        contentDiv.appendChild(h3);
+        contentDiv.appendChild(p);
+        contentDiv.appendChild(a);
+
+        colContent.appendChild(contentDiv);
+        row.appendChild(colImg);
+        row.appendChild(colContent);
+        carouselItem.appendChild(row);
+
+        innerFrag.appendChild(carouselItem);
+      });
+
+      indicators.appendChild(indicatorsFrag);
+      inner.appendChild(innerFrag);
+
+      // Controles prev/next
+      const btnPrev = document.createElement('button');
+      btnPrev.className = 'carousel-control-prev';
+      btnPrev.type = 'button';
+      btnPrev.setAttribute('data-bs-target', '#newsCarousel');
+      btnPrev.setAttribute('data-bs-slide', 'prev');
+      btnPrev.innerHTML =
+        '<span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>';
+
+      const btnNext = document.createElement('button');
+      btnNext.className = 'carousel-control-next';
+      btnNext.type = 'button';
+      btnNext.setAttribute('data-bs-target', '#newsCarousel');
+      btnNext.setAttribute('data-bs-slide', 'next');
+      btnNext.innerHTML =
+        '<span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span>';
+
+      // Montar el carrusel
+      carousel.appendChild(indicators);
+      carousel.appendChild(inner);
+      carousel.appendChild(btnPrev);
+      carousel.appendChild(btnNext);
+
+      // Reemplaza el contenido del contenedor
+      carouselContainer.innerHTML = '';
+      carouselContainer.appendChild(carousel);
+
+      // Inicializa Bootstrap Carousel
+      const bsCarousel = new bootstrap.Carousel(
+        document.getElementById('newsCarousel'),
+        {
+          interval: 4000,
+          wrap: true,
+          keyboard: true,
+        }
+      );
+
+      // Función para cargar imágenes bajo demanda en el slide especificado
+      function loadSlideImages(index) {
+        const slide = inner.children[index];
+        if (!slide) return;
+        slide.querySelectorAll('img').forEach((imgEl) => {
+          if (imgEl.dataset && imgEl.dataset.src) {
+            imgEl.src = imgEl.dataset.src;
+            delete imgEl.dataset.src;
+          }
+        });
+      }
+
+      // Cargar la primera y la siguiente imagen para experiencia fluida
+      loadSlideImages(0);
+      loadSlideImages(1);
+
+      // Al cambiar de slide, cargar las imágenes del destino (y la siguiente como anticipación)
+      document
+        .getElementById('newsCarousel')
+        .addEventListener('slide.bs.carousel', function (e) {
+          const to = e.to;
+          loadSlideImages(to);
+          loadSlideImages((to + 1) % newsItems.length);
+        });
+
+      // Opcional: si esperas añadir muchas noticias, podrías implementar paginación/lazy rendering adicional aquí.
+    })
+    .catch((err) => {
+      // Mantener simple: loguear y mostrar mensaje ligero
+      console.error('No se pudieron cargar las noticias:', err);
+      carouselContainer.innerHTML =
+        '<div class="alert alert-warning">No se pudieron cargar las noticias en este momento.</div>';
+    });
 });
 
 // Script para el manejo del formulario de contacto
