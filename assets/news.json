@@ -180,5 +180,48 @@
     "imageUrl": "https://www.fao.org/images/rlclibraries/news/foto-raúl-rincones-venezuela-cultivo-kappaphycus-(1).jpeg?sfvrsn=3ad9a337_3",
     "imageAlt": "Cultivo de macroalgas - FAO",
     "link": "https://www.fao.org/americas/news/news-detail/cultivo-macroalgas-creci%C3%B3-en-la-ultima-decada/es"
+  },
+  {
+    "title": "Falta de asesores financieros en México te hace perder dinero",
+    "description": "Una noticia sobre la importancia de tener asesores financieros en México para evitar pérdidas de dinero.",
+    "imageUrl": "https://cdn-3.expansion.mx/dims4/default/8d8d5d4/2147483647/strip/true/crop/2121x1414+0+0/resize/1200x800!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F44%2F3b%2Fdb5dff3440faaff65aa629756708%2Fdepositos-tarjetas-bienestar.jpg",
+    "imageAlt": "La falta de asesores financieros en México te hace perder dinero en tus inversiones",
+    "link": "https://expansion.mx/mercados/2025/08/18/falta-asesores-financieros-mexico-te-hace-perder-dinero"
+  },
+  {
+    "title": "Las 'supervacas' que convirtieron a Brasil en el mayor exportador de carne en el mundo",
+    "description": "La 'supervaca' cebú fue mejorada genéticamente en Brasil hasta alcanzar su mejor condición, convirtiéndolo en el mayor exportador de carne del mundo.",
+    "imageUrl": "https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/7aa2/live/485fb0b0-74c7-11f0-8de5-d7af39eb1632.jpg.webp",
+    "imageAlt": "Una manada de cebúes",
+    "link": "https://www.bbc.com/mundo/articles/cnv7mzr8d13o"
+  },
+  {
+    "title": "México se afianza como segundo destino turístico en América",
+    "description": "México se fortalece como el segundo destino turístico en América, destacando por sus atractivos históricos y naturales.",
+    "imageUrl": "https://static.dw.com/image/68650419_605.jpg",
+    "imageAlt": "Globos aerostáticos sobrevuelan las pirámides de Teotihuacan, uno de los principales sitios turísticos de México, durante la celebración del equinoccio de primavera. (Imagen de archivo: 21.03.2024)",
+    "link": "https://www.dw.com/es/m%C3%A9xico-se-afianza-como-segundo-destino-tur%C3%ADstico-en-am%C3%A9rica/a-73686582"
+  },
+  {
+    "title": "Exportaciones: La Argentina ya le vendió al mundo por US$39.741 millones y consolidó un liderazgo en ni",
+    "description": "La Argentina ha exportado por US$39.741 millones y consolidado un liderazgo en el mercado internacional, especialmente en la exportación de carne a 50 países y maíz a 67 países.",
+    "imageUrl": "https://resizer.glanacion.com/resizer/v2/la-carne-argentina-llegan-a-50-paises-mientras-KC5CIFHTV5BARJUM65T2PJN56Y.png?auth=b20b257cd9861f77d2ee7eabdd9377ccd5fde68da3f04f35a8efe4629cddae00&width=420&height=280&quality=70&smart=true",
+    "imageAlt": "La carne argentina llegan a 50 países, mientras que el maíz a 67 países",
+    "link": "https://www.lanacion.com.ar/economia/campo/exportaciones-la-argentina-ya-le-vendio-al-mundo-por-us39741-millones-y-consolido-un-liderazgo-en-nid19082025/"
+  },
+  {
+    "title": "Producción de oro en Perú 🇵🇪 – Junio 2025",
+    "description": "En junio de 2025, la producción nacional de oro alcanzó los 8,894,296 gramos finos.",
+    "imageUrl": "https://media.licdn.com/dms/image/v2/D4E22AQFl8efJb8U4nQ/feedshare-shrink_2048_1536/B4EZjIkVL3GYA4-/0/1755711624719?e=2147483647&v=beta&t=Ltf7g84CV8cQ-0K_G9soSHIFRqmvHMW2GyIL6hs8Dn8",
+    "imageAlt": "No hay descripción de texto alternativo para esta imagen",
+    "link": "https://www.linkedin.com/feed/update/urn:li:activity:7363988297640988674"
+  },
+
+  {
+    "title": "Producción de Nissan Argentina se traslada a Aguascalientes: un impulso al desarrollo industrial y empleo local",
+    "description": "La producción de Nissan Argentina se trasladará a Aguascalientes, lo que representará un impulso significativo para el desarrollo industrial y la creación de empleos en la región.",
+    "imageUrl": "https://oem.com.mx/elsoldelcentro/img/25284723/1755544504/BASE_LANDSCAPE/480/image.webp",
+    "imageAlt": "Producción de Nissan en Aguascalientes",
+    "link": "https://oem.com.mx/elsoldelcentro/finanzas/produccion-de-nissan-argentina-se-traslada-a-aguascalientes-un-impulso-al-desarrollo-industrial-y-empleo-local-25284718"
   }
 ]
