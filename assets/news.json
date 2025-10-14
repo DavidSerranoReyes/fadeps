@@ -1,5 +1,103 @@
 [
   {
+    "title": "Corea del Sur promociona el APEC 2025 con Perú como protagonista",
+    "description": "Peru21 comparte un video y cobertura sobre la promoción de Corea del Sur del APEC 2025, destacando el papel de Perú en el evento.",
+    "imageUrl": "https://peru21.pe/sites/default/efsfiles/2025-10/apec-2025-corea-peru.png",
+    "imageAlt": "apec 2025",
+    "link": "https://peru21.pe/economia/corea-del-sur-promociona-el-apec-2025-con-peru-como-protagonista-video/"
+  },
+  {
+    "title": "Estos son los 10 malls más grandes de Latinoamérica en 2025: Uno de ellos está en Perú",
+    "description": "Peru Retail presenta el listado de los centros comerciales más grandes de Latinoamérica en 2025 y destaca uno ubicado en Perú.",
+    "imageUrl": "https://peruretail.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/Peru-Retail-1-125-434-1140x570.png",
+    "imageAlt": "Estos son los 10 malls más grandes de Latinoamérica en 2025: Uno de ellos está en Perú",
+    "link": "https://www.peru-retail.com/conoce-los-malls-mas-grandes-de-latinoamerica-2025-uno-de-ellos-se-encuentra-en-peru/"
+  },
+  {
+    "title": "Centroamérica se consolida como la quinta economía más grande de Latinoamérica",
+    "description": "La Prensa Gráfica analiza el crecimiento económico de la región y su posición en el contexto latinoamericano, con datos recientes y proyecciones.",
+    "imageUrl": "https://www.laprensagrafica.com/__export/1759611338986/sites/prensagrafica/img/2025/10/04/economxa-de-colombia_-imagen-google-images.jpg_1758632411.jpg",
+    "imageAlt": "Imagen ilustrativa del crecimiento económico regional",
+    "link": "https://www.laprensagrafica.com/economia/Centroamerica-se-consolida-como-la-quinta-economia-mas-grande-de-Latinoamerica-20251004-0040.html"
+  },
+  {
+    "title": "La educación en crisis: cómo afecta a miles de niñas y niños en distintas regiones",
+    "description": "BBC Mundo reporta sobre el impacto de la crisis educativa en comunidades vulnerables, con historias desde las aulas y cifras recientes.",
+    "imageUrl": "https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/3632/live/25582a00-9f8f-11f0-b9ae-cbef91e6ae73.jpg.webp",
+    "imageAlt": "Una niña con uniforme azul en un aula de la escuela.",
+    "link": "https://www.bbc.com/mundo/articles/c4gzyll4p4lo"
+  },
+  {
+    "title": "La nueva normativa Fintech en Latinoamérica que cambiará tus pagos y cuentas",
+    "description": "Infobae repasa los cambios regulatorios Fintech en la región y cómo afectarán los métodos de pago, cuentas digitales y la protección del consumidor.",
+    "imageUrl": "https://www.infobae.com/resizer/v2/M2GUU5A66NBHHNMG6N2Q2TCV2I.png?auth=e72a4a4c7cb2bf70911983e25d699780314bffb8d2b8027d841cfb6b9f03192b&smart=true&width=350&height=197&quality=85",
+    "imageAlt": "Las fintech han crecido en",
+    "link": "https://www.infobae.com/tecno/2025/10/04/la-nueva-normativa-fintech-en-latinoamerica-que-cambiara-en-tus-pagos-y-cuentas/"
+  },
+  {
+    "title": "El Salvador proyecta nuevo aeropuerto internacional: así avanza la construcción",
+    "description": "El Diario de Hoy detalla el plan de construcción de un nuevo aeropuerto internacional en El Salvador y su impacto en conectividad, inversión y empleo.",
+    "imageUrl": "https://cdn-pro.elsalvador.com/wp-content/uploads/2025/09/dinero-negocios-aeropuertos-centroamerica.jpg",
+    "imageAlt": "Pasajeros transitan la terminal del Aeropuerto Internacional de El Salvador, que amplió su capacidad operativa en 2024.",
+    "link": "https://www.elsalvador.com/dinero-y-negocios/entorno-economico/aeropuertos-construccion-de-aeropuerto-internacional-el-salvador/1244475/2025/"
+  },
+  {
+    "title": "Colombia conquista el mercado laboral de Estados Unidos: un fenómeno en plena expansión",
+    "description": "Portafolio analiza la expansión del talento colombiano en el mercado laboral de EE. UU., con impulso en contratación, demanda sectorial y retos de integración.",
+    "imageUrl": "https://www.portafolio.co/files/article_new_multimedia/uploads/2025/09/28/68d9ac74d4edb.jpeg",
+    "imageAlt": "Empresarios ejecutivos",
+    "link": "https://www.portafolio.co/economia/empleo/colombia-conquista-el-mercado-laboral-de-estados-unidos-un-fenomeno-en-plena-expansion-640922"
+  },
+  {
+    "title": "#Ranking: Los 10 millonarios más poderosos de América Latina, según Bloomberg",
+    "description": "Banca y Negocios resume el ranking de Bloomberg con los 10 multimillonarios más influyentes de América Latina y sus fortunas actualizadas.",
+    "imageUrl": "https://www.bancaynegocios.com/wp-content/uploads/2025/10/tsize_600x400_FORTUNA-MILLONARIOS.jpg",
+    "imageAlt": "#Ranking: Los 10 millonarios más poderosos de América Latina, según Bloomberg",
+    "link": "https://www.bancaynegocios.com/ranking-los-10-millonarios-mas-poderosos-de-america-latina-segun-bloomberg/"
+  },
+  {
+    "title": "¿En qué invertir en América Latina antes de que finalice 2025? Esto dicen los analistas",
+    "description": "Bloomberg Línea recoge las recomendaciones de analistas sobre oportunidades de inversión en la región hacia el cierre de 2025 (divisas, acciones, bonos y sectores clave).",
+    "imageUrl": "https://www.bloomberglinea.com/resizer/v2/R4VVHQCMUJBVLN3PLGMG6Y2M4A.jpg?auth=66a6d003a8c41d29185b4619969cb5a028b4c22a2d0a92246e53ab80711c0fbb&width=800&height=533&quality=80&smart=true",
+    "imageAlt": "Recomendaciones de inversión en América Latina hacia fin de 2025",
+    "link": "https://www.bloomberglinea.com/mercados/en-que-invertir-en-america-latina-antes-de-que-finalice-2025-esto-dicen-los-analistas/"
+  },
+  {
+    "title": "América Móvil y Entel presentan una oferta conjunta por Telefónica Chile",
+    "description": "Cinco Días (El País) informa: América Móvil y Entel lanzan una oferta conjunta para adquirir Telefónica Chile, movimiento clave en el sector telecom de la región.",
+    "imageUrl": "https://imagenes.elpais.com/resizer/v2/BWUTA27Z2RHDZCOT3AF2GVXZU4.jpeg?auth=bc816d31257a6256e48f76d060753cc92adec7d5e3c73f1beee9e5b1d552f86e&width=1200",
+    "imageAlt": "América Móvil y Entel: oferta conjunta por Telefónica Chile",
+    "link": "https://cincodias.elpais.com/companias/2025-10-02/america-movil-y-entel-presentan-una-oferta-conjunta-por-telefonica-chile.html"
+  },
+  {
+    "title": "Un futuro para los jóvenes del campo de América Latina y el Caribe",
+    "description": "El País analiza desafíos y oportunidades para la juventud rural en ALC: empleo digno, innovación agrícola y políticas públicas inclusivas.",
+    "imageUrl": "https://imagenes.elpais.com/resizer/v2/NPBPCYPHAVGLJAPJLO4JMWI7EU.jpg?auth=5ccef8048e609f8052ac85cec342e38827bf31134af501d741f9bc69fb007611&width=1200",
+    "imageAlt": "Jóvenes del campo en América Latina y el Caribe",
+    "link": "https://elpais.com/america-futura/2025-10-03/un-futuro-para-los-jovenes-del-campo-de-america-latina-y-el-caribe.html"
+  },
+  {
+    "title": "Brasil lidera en número de deeptechs en América Latina pero es tercero en inversión privada",
+    "description": "Informe de FAPESP: Brasil tiene la mayor cantidad de deeptechs en la región, aunque ocupa el tercer lugar en atracción de inversión privada.",
+    "imageUrl": "https://agencia.fapesp.br/files/post/56024.jpg",
+    "imageAlt": "Deeptechs en América Latina - FAPESP",
+    "link": "https://agencia.fapesp.br/brasil-tiene-el-mayor-numero-de-deeptechs-en-america-latina-pero-ocupa-el-tercer-lugar-en-inversion-privada/56024"
+  },
+  {
+    "title": "¿Cuál es el país más próspero de Centroamérica, Panamá o Costa Rica?",
+    "description": "Análisis comparativo de prosperidad entre Panamá y Costa Rica, con indicadores económicos y de bienestar recientes.",
+    "imageUrl": "https://wpapi.larepublica.net/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2025/10/Panama-1024x536.png.webp",
+    "imageAlt": "¿Cuál es el país más próspero de Centroamérica, Panamá o Costa Rica?",
+    "link": "https://www.larepublica.net/noticia/cual-es-el-pais-mas-prospero-de-centroamerica-panama-o-costa-rica"
+  },
+  {
+    "title": "Estos son los 20 mejores hoteles de Centroamérica, según Tripadvisor 2025",
+    "description": "El ranking Travelers' Choice 2025 de Tripadvisor destaca 20 hoteles de Centroamérica entre los mejores del mundo.",
+    "imageUrl": "https://www.nacion.com/resizer/v2/C72SFF2QYZAL3JOAGUMQEA6Q3U.png?smart=true&auth=24690d8c19462884f32918daef943a2c33e2e746d24c9a627841c04548c63d0e&width=1920&height=1080",
+    "imageAlt": "Hoteles de Centroamérica destacados en Travelers' Choice 2025",
+    "link": "https://www.nacion.com/economia/estos-son-los-20-mejores-hoteles-de-centroamerica/KLNI5F2XTZH5BHH4KF6J2SHSYI/story/"
+  },
+  {
     "title": "EL PAÍS DONDE LA MENTE HUMANA ES VALORADA PREMIADA Y CELEBRADA",
     "description": "¿Están listos para un viaje que sacudirá sus neuronas de pura inspiración? ¡Bienvenidos a \"El país donde la mente humana es valorada, premiada y celebrada\" y no, no es un cuento de hadas, es Suecia, la tierra de las ideas revolucionarias!",
     "imageUrl": "https://img.youtube.com/vi/BL10m90XeCk/maxresdefault.jpg",
@@ -124,13 +222,6 @@
     "imageUrl": "https://i.blogs.es/95d6bb/241028-aca6-des-f1-desafios-globales-mexico-china_waifu2x_photo_noise3_scale/500_333.png",
     "imageAlt": "1,000 empresas chinas Mx",
     "link": "https://www.xataka.com.mx/otros-1/1-000-empresas-chinas-operan-mexico-pais-sera-nueva-plataforma-para-entrar-a-america-aranceles"
-  },
-  {
-    "title": "Panamá implementa trazabilidad total para transbordos de hidrocarburos en alta mar",
-    "description": "Autoridades panameñas anuncian un sistema de trazabilidad integral para los transbordos de hidrocarburos en alta mar, con monitoreo en tiempo real, sellos digitales y protocolos que buscan aumentar la seguridad, reducir el contrabando y mejorar el control ambiental.",
-    "imageUrl": "https://portalportuario.cl/wp-content/uploads/2025/08/STS-NOTIFICATION-1-420x409.png",
-    "imageAlt": "Notificación trazabilidad Panamá",
-    "link": "https://portalportuario.cl/panama-implementa-trazabilidad-total-para-transbordos-de-hidrocarburos-en-alta-mar/"
   },
   {
     "title": "50 LARGEST COMPANIES IN THE WORLD",
@@ -364,5 +455,89 @@
     "imageUrl": "https://cdn-3.expansion.mx/dims4/default/15f479f/2147483647/strip/true/crop/1200x675+0+0/resize/1200x675!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fed%2Fb7%2F09b78ec94bbf9bde9a851dea5598%2Fia-generativa-mexico-accentura.jpg",
     "imageAlt": "Ai,Assistant,With,Llm,,Big,Data,,Machine,Learning,,And,Generative",
     "link": "https://expansion.mx/tecnologia/2025/09/10/mexico-lideraria-la-ia-generativa-en-america-latina"
+  },
+  {
+    "title": "América Latina y el Caribe tiene una tasa de fertilidad de 1,8 nacimientos por mujer",
+    "description": "Cifras de Banco Mundial arrojaron que América Latina y el Caribe tiene un promedio de 1,8 nacimientos por mujer. Bolivia, Honduras y Guyana son los países de la región que tienen las mayores tasas de fertilidad.",
+    "imageUrl": "https://img.lalr.co/cms/2025/09/26085153/WEB_Globo_TasaFertilidad-AmericaLatina.jpg",
+    "imageAlt": "Tasa de fertilidad en América Latina y el Caribe",
+    "link": "https://www.larepublica.co/globoeconomia/america-latina-y-el-caribe-tiene-una-tasa-de-fertilidad-de-1-8-nacimientos-por-mujer-4233736"
+  },
+  {
+    "title": "Aeropuerto de Tocumen en Panamá lidera el tráfico aéreo de Centroamérica en 2025 con un crecimiento del 8 %",
+    "description": "El Aeropuerto Internacional de Tocumen, en Ciudad de Panamá, reafirma en 2025 su condición de principal “puerta de entrada” de Centroamérica y de hub regional por excelencia.",
+    "imageUrl": "https://www.centroamerica360.com/wp-content/uploads/2025/09/Tocumen-750x375.webp",
+    "imageAlt": "Aeropuerto de Tocumen en Panamá",
+    "link": "https://www.centroamerica360.com/economia/aeropuerto-de-tocumen-en-panama-lidera-el-trafico-aereo-de-centroamerica-en-2025-con-un-crecimiento-del-8/"
+  },
+  {
+    "title": "MINEM anuncia que Macusani Yellowcake realizará 300 perforaciones de litio en los próximos tres años",
+    "description": "Jorge Montero, ministro de Energía y Minas (MINEM), anunció que la empresa Macusani Yellowcake realizará unas 300 perforaciones de exploración de litio en el proyecto Falchani, ubicado en Puno.",
+    "imageUrl": "https://www.rumbominero.com/wp-content/uploads/2025/09/Macusani-Falchani.jpg",
+    "imageAlt": "Proyecto Falchani de Macusani Yellowcake, ubicado en Puno.",
+    "link": "https://www.rumbominero.com/portada2/minem-macusani-yellowcake-300-perforaciones-litio-tres-anos/"
+  },
+  {
+    "title": "Emergent Cold Latam cierra millonaria compra en Lurín y apunta a expandirse en Perú",
+    "description": "Hace cuatro meses, la multinacional Emergent Cold concretó la compra de Frialsa. Hoy suma su segunda adquisición en el año.",
+    "imageUrl": "https://gestion.pe/resizer/v2/TUA3RCKEPRH43LTVQPA3PAKBTU.jpg?auth=8239e94e7344dae32ceeea5f2818722b9834301ecd0affc9360fb80616ab86e5&width=1920&height=1439&quality=75&smart=true",
+    "imageAlt": "Almacenes en frío de Emergent Cold Latam en Perú.",
+    "link": "https://gestion.pe/economia/empresas/emergent-cold-cierra-segunda-compra-en-peru-de-que-se-trata-y-habras-mas-noticia/"
+  },
+  {
+    "title": "El país de América del Sur con el túnel más alto: con más de 4.000 metros rompe el récord",
+    "description": "Ubicado en Perú, el Túnel Punta Olímpica atraviesa la Cordillera Blanca, uniendo el Callejón de Huaylas con la Zona de los Conchucos, en la región de Áncash. Este túnel se ha convertido en el más alto de América del Sur, con una altitud de 4.736 metros sobre el nivel del mar.",
+    "imageUrl": "https://media.diariouno.com.ar/p/0af165befa3106abf85e911064ebce91/adjuntos/298/imagenes/009/630/0009630520/1200x0/smart/tunel-2.jpg",
+    "imageAlt": "El país de América del Sur con el túnel más alto: con más de 4.000 metros rompe el récord",
+    "link": "https://www.diariouno.com.ar/sociedad/el-pais-america-del-sur-el-tunel-mas-alto-mas-4000-metros-rompe-el-record-n1480718"
+  },
+  {
+    "title": "De Colombia para el mundo: el artículo que podría ser la próxima sensación global",
+    "description": "El sombrero vueltiao es uno de los símbolos más reconocidos de Colombia y un ícono del Caribe colombiano, especialmente de los departamentos de Córdoba y Sucre. Elaborado a mano con fibras de caña flecha, este accesorio refleja la habilidad artesanal del pueblo Zenú y su riqueza cultural.",
+    "imageUrl": "https://www.portafolio.co/files/article_new_multimedia/uploads/2025/09/25/68d5b5ae58829.jpeg",
+    "imageAlt": "Producto de Colombia",
+    "link": "https://www.portafolio.co/negocios/comercio/de-colombia-para-el-mundo-el-articulo-que-podria-ser-la-proxima-sensacion-global-640772"
+  },
+  {
+    "title": "Centroamérica crecerá 3.4% en 2026 y se posiciona como región clave para inversiones",
+    "description": "La Comisión Económica para América y el Caribe (CEPAL) proyecta un crecimiento de 3.4% para Centroamérica en 2026, por encima del promedio latinoamericano. Esto abre nuevas oportunidades para negocios e inversión.",
+    "imageUrl": "https://cdn-pro.elsalvador.com/wp-content/uploads/2025/09/dinero-negocios-avance-centroamerica-cepal-crecimiento.jpg",
+    "imageAlt": "Centroamérica crece de forma consistente hacia 2026, según CEPAL. / Ilustración elsalvador.com",
+    "link": "https://www.elsalvador.com/dinero-y-negocios/entorno-economico/centroamerica-crecera-economia-2026-informe-cepal/1244080/2025/"
+  },
+  {
+    "title": "México se posiciona como uno de los inversionistas más sostenibles de América Latina",
+    "description": "América Latina está dando pasos significativos hacia la inversión verde, impulsada por su crecimiento de la energía verde, bonos climáticos y las prácticas empresariales responsables en toda la región.",
+    "imageUrl": "https://imagenes.eleconomista.com.mx/files/image_768_448/uploads/2025/02/27/67c13a209a823.jpeg",
+    "imageAlt": "main image",
+    "link": "https://www.eleconomista.com.mx/los-especiales/mexico-posiciona-inversionistas-sostenibles-america-latina-20250922-778200.html"
+  },
+  {
+    "title": "Los 10 países que más ventas realizan a México",
+    "description": "Descubre cuáles son los principales socios comerciales de México y cómo han evolucionado las relaciones comerciales internacionales. Un análisis detallado de los países que lideran las exportaciones hacia el mercado mexicano.",
+    "imageUrl": "assets/eventos/foro3.jpg",
+    "imageAlt": "Los 10 países que más ventas realizan a México",
+    "link": "assets/eventos/foro3.jpg"
+  },
+  {
+    "title": "Las 5 ciudades más ricas per cápita de Latinoamérica",
+    "description": "Conoce las ciudades latinoamericanas con el mayor PIB per cápita y descubre qué factores económicos han contribuido a su prosperidad. Un análisis comparativo del desarrollo económico urbano en la región.",
+    "imageUrl": "assets/eventos/foro4.jpg",
+    "imageAlt": "Las 5 ciudades más ricas per cápita de Latinoamérica",
+    "link": "assets/eventos/foro4.jpg"
+  },
+  {
+    "title": "Las 9 ciudades de Latam con mayor inversión extranjera directa",
+    "description": "Explora las ciudades latinoamericanas que lideran en atracción de inversión extranjera directa y conoce las estrategias que las han posicionado como destinos preferidos por los inversionistas internacionales.",
+    "imageUrl": "assets/eventos/foro1.jpg",
+    "imageAlt": "Las 9 ciudades de Latam con mayor inversión extranjera directa",
+    "link": "assets/eventos/foro1.jpg"
+  },
+  {
+    "title": "Ciudades más poderosas de América Latina",
+    "description": "Descubre las metrópolis latinoamericanas que concentran el mayor poder económico, político y social de la región. Un ranking basado en indicadores de desarrollo urbano, infraestructura y influencia regional.",
+    "imageUrl": "assets/eventos/foro2.jpg",
+    "imageAlt": "Ciudades más poderosas de América Latina",
+    "link": "assets/eventos/foro2.jpg"
   }
 ]

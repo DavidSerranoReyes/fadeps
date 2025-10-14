@@ -1,0 +1,53 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Validate JSON syntax for assets/news.json",
+			"type": "shell",
+			"command": "node -e \"const fs=require('fs'); JSON.parse(fs.readFileSync('assets/news.json','utf8')); console.log('JSON OK')\"",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Validate JSON syntax for assets/news.json",
+			"type": "shell",
+			"command": "node -e \"const fs=require('fs'); JSON.parse(fs.readFileSync('assets/news.json','utf8')); console.log('JSON OK')\"",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Validate JSON syntax for assets/news.json",
+			"type": "shell",
+			"command": "node -e \"const fs=require('fs'); JSON.parse(fs.readFileSync('assets/news.json','utf8')); console.log('JSON OK')\"",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Validate JSON syntax for assets/news.json",
+			"type": "shell",
+			"command": "node -e \"const fs=require('fs'); JSON.parse(fs.readFileSync('assets/news.json','utf8')); console.log('JSON OK')\"",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Validate JSON syntax for assets/news.json",
+			"type": "shell",
+			"command": "node -e \"const fs=require('fs'); JSON.parse(fs.readFileSync('assets/news.json','utf8')); console.log('JSON OK')\"",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Validate JSON syntax for assets/news.json",
+			"type": "shell",
+			"command": "node -e \"const fs=require('fs'); JSON.parse(fs.readFileSync('assets/news.json','utf8')); console.log('JSON OK')\"",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

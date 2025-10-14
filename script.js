@@ -168,11 +168,21 @@ document.addEventListener('DOMContentLoaded', function () {
         img.alt = item.imageAlt || '';
         img.width = 640;
         img.height = 360;
+        // Mitigar bloqueos por hotlinking: no enviar referrer
+        img.referrerPolicy = 'no-referrer';
+        // Fallback si falla la carga de la imagen remota
+        img.onerror = () => {
+          img.onerror = null; // evitar loops
+          img.src = placeholderDataUri;
+        };
 
         // Para optimizar: solo la primera imagen se carga eager; el resto usan data-src y loading=lazy
         if (index === 0) {
           img.src = item.imageUrl || placeholderDataUri;
           img.setAttribute('loading', 'eager');
+          // prioridad de red para la primera imagen
+          img.decoding = 'async';
+          img.fetchPriority = 'high';
         } else {
           // Usar placeholder como src inicial para evitar layout shift
           img.src = placeholderDataUri;
@@ -181,6 +191,9 @@ document.addEventListener('DOMContentLoaded', function () {
             img.dataset.src = item.imageUrl;
           }
           img.setAttribute('loading', 'lazy');
+          img.decoding = 'async';
+          // Bajar prioridad de red para imágenes no visibles aún
+          img.fetchPriority = 'low';
         }
 
         colImg.appendChild(img);
@@ -264,15 +277,22 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!slide) return;
         slide.querySelectorAll('img').forEach((imgEl) => {
           if (imgEl.dataset && imgEl.dataset.src) {
+            // Mantener referrerPolicy y fallback también aquí
+            imgEl.referrerPolicy = 'no-referrer';
+            imgEl.onerror = () => {
+              imgEl.onerror = null;
+              imgEl.src = placeholderDataUri;
+            };
             imgEl.src = imgEl.dataset.src;
             delete imgEl.dataset.src;
           }
         });
       }
 
-      // Cargar la primera y la siguiente imagen para experiencia fluida
+      // Precargar la primera y dos siguientes para una navegación más fluida
       loadSlideImages(0);
       loadSlideImages(1);
+      loadSlideImages(2);
 
       // Al cambiar de slide, cargar las imágenes del destino (y la siguiente como anticipación)
       document
@@ -281,6 +301,8 @@ document.addEventListener('DOMContentLoaded', function () {
           const to = e.to;
           loadSlideImages(to);
           loadSlideImages((to + 1) % newsItems.length);
+          // Precargar una adicional por delante
+          loadSlideImages((to + 2) % newsItems.length);
         });
 
       // Opcional: si esperas añadir muchas noticias, podrías implementar paginación/lazy rendering adicional aquí.
