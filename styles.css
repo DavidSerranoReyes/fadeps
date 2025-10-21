@@ -885,7 +885,60 @@ html {
   transition: all 0.3s ease;
   background: white;
   margin-bottom: 30px;
-  height: 320px;
+  min-height: 320px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para el mensaje de próximo evento */
+.coming-soon-event {
+  width: 100%;
+  padding: 3rem 2rem !important;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 15px;
+}
+
+.coming-soon-event .coming-soon-icon {
+  margin-bottom: 1.5rem;
+}
+
+.coming-soon-event .coming-soon-icon i {
+  color: #6c757d;
+  transition: transform 0.3s ease;
+}
+
+.coming-soon-event:hover .coming-soon-icon i {
+  transform: scale(1.1);
+}
+
+.coming-soon-event h4 {
+  color: #495057;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.coming-soon-event p {
+  color: #6c757d;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0 auto 1.5rem;
+}
+
+.coming-soon-event .btn {
+  transition: all 0.3s ease;
+}
+
+.coming-soon-event .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .event-poster-card:hover {
@@ -1001,7 +1054,20 @@ html {
 /* Responsive para la galería de eventos */
 @media (max-width: 991.98px) {
   .event-poster-card {
-    height: 280px;
+    min-height: 280px;
+  }
+
+  .coming-soon-event {
+    padding: 2.5rem 1.5rem !important;
+    min-height: 280px;
+  }
+
+  .coming-soon-event h4 {
+    font-size: 1.3rem;
+  }
+
+  .coming-soon-event p {
+    font-size: 0.95rem;
   }
 
   .event-poster-content h5 {
@@ -1016,7 +1082,25 @@ html {
 
 @media (max-width: 767.98px) {
   .event-poster-card {
-    height: 250px;
+    min-height: 250px;
+  }
+
+  .coming-soon-event {
+    padding: 2rem 1.5rem !important;
+    min-height: 250px;
+  }
+
+  .coming-soon-event .coming-soon-icon i {
+    font-size: 2.5rem;
+  }
+
+  .coming-soon-event h4 {
+    font-size: 1.2rem;
+  }
+
+  .coming-soon-event p {
+    font-size: 0.9rem;
+    max-width: 95%;
   }
 
   .event-poster-overlay {
@@ -1045,7 +1129,29 @@ html {
 
 @media (max-width: 575.98px) {
   .event-poster-card {
-    height: 220px;
+    min-height: auto;
+  }
+
+  .coming-soon-event {
+    padding: 1.5rem 1rem !important;
+    min-height: auto;
+  }
+
+  .coming-soon-event .coming-soon-icon i {
+    font-size: 2rem;
+  }
+
+  .coming-soon-event h4 {
+    font-size: 1.1rem;
+  }
+
+  .coming-soon-event p {
+    font-size: 0.85rem;
+  }
+
+  .coming-soon-event .btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
   }
 
   .event-poster-content h5 {

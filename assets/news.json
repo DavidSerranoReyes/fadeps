@@ -1,5 +1,40 @@
 [
   {
+    "title": "Más de un millón de boletos vendidos para el Mundial 2026",
+    "description": "CNN Español reporta la exitosa venta de más de un millón de entradas para la Copa Mundial de la FIFA 2026 que se celebrará en Estados Unidos, México y Canadá.",
+    "imageUrl": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2236834972.jpg?q=w_1110,c_fill",
+    "imageAlt": "El presidente de la FIFA, Gianni Infantino, habla en el marco de una reunión en la sede de las Naciones Unidas.",
+    "link": "https://cnnespanol.cnn.com/2025/10/16/deportes/millon-boletos-vendidos-mundial-2026-orix"
+  },
+  {
+    "title": "Panamá se aproxima a la concesión de aeropuertos de Río Hato, David y Colón",
+    "description": "Revista EyN reporta los avances del proceso de concesión de tres importantes aeropuertos panameños que impulsarán la conectividad regional.",
+    "imageUrl": "https://www.revistaeyn.com/binrepository/1441x900/121c0/1200d900/none/26086/WKMD/telemetro-aeropuerto_12293259_20251017102807.jpg",
+    "imageAlt": "Panamá: se aproxima concesión de aeropuertos Río Hato, David y Colón",
+    "link": "https://www.revistaeyn.com/centroamericaymundo/panama-se-aproxima-concesion-de-aeropuertos-rio-hato-david-y-colon-AL27796600"
+  },
+  {
+    "title": "Nuevas tiendas de Costco: en qué ciudades se construirán",
+    "description": "El Financiero revela los planes de expansión de Costco en México y las ciudades donde se construirán nuevas sucursales.",
+    "imageUrl": "https://www.elfinanciero.com.mx/resizer/v2/2C6LF36NXVBRZKPO4MNHEOL2N4.jpg?smart=true&auth=041ba436b7b99a876d845d9dcb218cad9f3dbe45cdc87297994fb75b7ea3bbcd&width=1200&quality=85",
+    "imageAlt": "Nuevas tiendas Costco en México",
+    "link": "https://www.elfinanciero.com.mx/empresas/2025/10/16/nuevas-tiendas-de-costco-en-que-ciudades-se-construiran/"
+  },
+  {
+    "title": "Cox promete invertir 5.500 millones hasta 2028 y pone su foco en México tras la compra a Iberdrola",
+    "description": "Cinco Días reporta la estrategia de inversión de Cox Energy tras la adquisición de activos a Iberdrola, con especial enfoque en el mercado mexicano.",
+    "imageUrl": "https://imagenes.elpais.com/resizer/v2/7TA6JKRZWZBTFPBXOB55NKWXT4.JPG?auth=14fd4cf406ea49c276cfed2ab1ef3937ed3e023da90f63510af652459779fb98&width=1200",
+    "imageAlt": "Cox Energy inversión México",
+    "link": "https://cincodias.elpais.com/companias/2025-10-16/cox-promete-invertir-5500-millones-hasta-2028-y-pone-su-foco-en-mexico-tras-la-compra-a-iberdrola.html"
+  },
+  {
+    "title": "Crédito privado gana terreno como fuente alternativa de financiamiento en América Latina",
+    "description": "Forbes República Dominicana analiza el informe de Moody's Ratings sobre el crecimiento del crédito privado como alternativa de financiamiento en la región.",
+    "imageUrl": "https://editorial.forbes.do/wp-content/uploads/2025/10/37745.jpg",
+    "imageAlt": "Crédito privado en América Latina",
+    "link": "https://forbes.do/negocios/2025-10-17/credito-privado-gana-terreno-como-fuente-alternativa-de-financiamiento-en-america-latina-segun-reporte-de-moodys-ratings"
+  },
+  {
     "title": "Corea del Sur promociona el APEC 2025 con Perú como protagonista",
     "description": "Peru21 comparte un video y cobertura sobre la promoción de Corea del Sur del APEC 2025, destacando el papel de Perú en el evento.",
     "imageUrl": "https://peru21.pe/sites/default/efsfiles/2025-10/apec-2025-corea-peru.png",
@@ -525,6 +560,13 @@
     "imageUrl": "assets/eventos/foro4.jpg",
     "imageAlt": "Las 5 ciudades más ricas per cápita de Latinoamérica",
     "link": "assets/eventos/foro4.jpg"
+  },
+  {
+    "title": "Riqueza por país latinoamericano 2024",
+    "description": "Análisis comparativo de la riqueza y el PIB por país en América Latina durante 2024. Descubre qué naciones lideran el desarrollo económico regional y cuáles son los factores determinantes en la distribución de la riqueza en Latinoamérica.",
+    "imageUrl": "assets/eventos/foro5.jpg",
+    "imageAlt": "Riqueza por país latinoamericano 2024",
+    "link": "assets/eventos/foro5.jpg"
   },
   {
     "title": "Las 9 ciudades de Latam con mayor inversión extranjera directa",
